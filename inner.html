@@ -8,18 +8,24 @@
   <body>
 	<header class="header">
 		<nav class="header-navigation">
-			<a class="header-logo" href="index.html">
+			<a class="header-logo">
 				<img src="img/logo.svg" width="154" height="64" alt="Логотоп магазина «Глейси»">
 			</a>
-			<ul class="site-navigation">
-				<li class="site-navigation-current"><a href="catalog.html">Каталог</a></li>
+			<ul class="site-navigation-current">
+				<li><a href="catalog.html">Каталог</a></li>
 				<li><a href="deliveryandpayment.html">Доставка и оплата</a></li>
 				<li><a href="about.html">О Компании</a></li>
 			</ul>
 			<ul class="user-navigation">
-				<li class="search"><img src="img/loupe.svg" width="17" height="17" alt="Поиск"></li>
-				<li class="login-link"><img src="img/entrance.svg" width="21" height="19" alt="Логин">Вход</li>
-				<li class="basket"><img src="img/basket-red.svg" width="21" height="20" alt="Корзина">2 товара</li>
+				<li class="search">
+					<button class="non-focused non-pressed"><img src="img/loupe.svg" width="17" height="17" alt="Поиск"></button>
+				</li>
+				<li class="login-link">
+					<button class="non-focused non-pressed"><img src="img/entrance.svg" width="21" height="19" alt="Логин">Вход</button>
+				</li>
+				<li class="basket">
+					<button class="non-focused non-pressed"><img src="img/basket-red.svg" width="21" height="20" alt="Корзина">Пусто</button> 
+				</li>
 			</ul>
 			<ul class="info">
 				<li class="time">С 10 до 20 ежедневно</li>
@@ -38,8 +44,49 @@
 		
 		<section class="filters">
 			<h2 class="visually-hidden">Фильтры товаров</h2>
-			<!-- Здесь будет форма -->
+			<p>
+			<form action="#" method="post">
+				<div class="filter-sort">
+					<p>Сортировка:</p>
+					<select name = "sort">
+						<option value="popularuty">По популяности</option>
+					<select>
+				</div>
+				<div class="filter-cost">
+					<p>Цена: </p>
+					<input type="range">
+				</div>
+				<div class="filter-fat">
+					<p>Жирность: </p>
+					<input type="radio" name="fat" value="0">0</input>
+					<input type="radio" name="fat" checked>до 10</input>
+					<input type="radio" name="fat">до 30</input>
+					<input type="radio" name="fat">выше 30</input>
+				<div>
+				<div class="filter-filler">
+					<p>Наполнители: </p>
+					<input type="checkbox" name="filler1" value="filler1" checked>Шоколадные</input>
+					<input type="checkbox" name="filler1" value="filler1" checked>Сахарные присыпки</input>
+					<input type="checkbox" name="filler1" value="filler1">Фрукты</input>
+					<input type="checkbox" name="filler1" value="filler1">Сиропы</input>
+					<input type="checkbox" name="filler1" value="filler1">Джемы</input>
+				</div>	
+				<input class="confirmation" type="submit" value="Применить">			
+			</form>
 		</section>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		
 		<section class="catalog">
 			<h2 class="visually-hidden">Список сливочного мороженого </h2>
