@@ -12,6 +12,11 @@ body {
 	background: linear-gradient(to top, #859d8f, #9cb0a5);
 }
 
+svg path {
+	stroke:inherit;
+	stroke-width:inherit;
+	fill:inherit;
+}
 
 
 a {
@@ -132,6 +137,67 @@ a:focus {
 .location {
 	color:#000000;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+.user-nav-button {
+	border:none;
+	background:#a3b4aa;
+	color:#ffffff;
+}
+
+.user-nav-button-basket {
+	border:none;
+	background:#a3b4aa;
+	color:#ffffff;
+}
+
+.user-nav-button .loupe {
+	fill:#ffffff;
+}
+
+.user-nav-button .entrance {
+	fill:#ffffff;
+}
+
+.user-nav-button:hover,
+.user-nav-button:focus {
+	border:none;
+	background:#ffffff;
+	fill: #000000;
+	color:#000000;
+}
+.user-nav-button:focus .loupe,
+.user-nav-button:hover .loupe {
+	fill: #000000;
+}
+
+.user-nav-button:focus .entrance,
+.user-nav-button:hover .entrance {
+	fill: #000000;
+}
+
+.user-nav-button-basket:focus, 
+.user-nav-button-basket:hover  {
+	background:#ffffff;
+	color:#000000;
+}
+
+.user-nav-button-basket:focus .img-basket,
+.user-nav-button-basket:hover .img-basket  {
+	background: url("../img/basket-red.svg");
+}
+
 
 
 
