@@ -17,8 +17,13 @@ a {
 	color: #ffffff;
 }
 
+
 a:hover {
 	color: #dc532f;
+}
+
+.catalog-popup-list a:hover {
+	color:#000000;
 }
 
 .site-navigation,
@@ -27,16 +32,37 @@ a:hover {
 .hits-list,
 .about-list,
 .footer-social-list,
-.footer-about,
+.footer-about-list,
 .catalog-popup-list {
 	list-style:none;
 }
 
+.site-navigation a,
+.footer-social-list a {
+	color: #ffffff;
+}
+
+.catalog-popup-list a {
+	color:#000000;
+	text-decoration:none;
+}
+
+.catalog-popup-title {
+	color:#000000;
+	font-style:strong;
+}
+	
 .site-navigation a:hover {
 	color:#000000;
 	text-decoration:none;
 	background-color:#FFFFFF;
 }
 
+.footer-social-list a:hover {
+}
+
+.catalog-popup-list a:hover {
+	background-color:#fbded8;
+}
 
 
