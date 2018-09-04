@@ -8,9 +8,11 @@ body {
 	font-weight: 700;
 	color: #ffffff;
 	text-transform: uppercase;
-	
+	/*background: linear-gradient(to top, #000000, #AAAAAA);*/
 	background: linear-gradient(to top, #859d8f, #9cb0a5);
 }
+
+
 
 a {
 	text-decoration: underline;
@@ -18,12 +20,25 @@ a {
 }
 
 
-a:hover {
+a:hover,
+a:focus {
 	color: #dc532f;
 }
 
-.catalog-popup-list a:hover {
+.catalog-popup-list a:hover,
+.catalog-popup-list a:focus {
+	background-color:#fbded8;
 	color:#000000;
+}
+
+.catalog-popup-list a:active {
+	background-color:#f7b5a5;
+	color:#000000;
+}
+
+.catalog-popup-list-current {
+	background-color:#d07058;
+	color:#FFFFFF;
 }
 
 .site-navigation,
@@ -52,7 +67,8 @@ a:hover {
 	font-style:strong;
 }
 	
-.site-navigation a:hover {
+.site-navigation a:hover,
+.site-navigation a:focus {
 	color:#000000;
 	text-decoration:none;
 	background-color:#FFFFFF;
@@ -61,8 +77,86 @@ a:hover {
 .footer-social-list a:hover {
 }
 
-.catalog-popup-list a:hover {
-	background-color:#fbded8;
+.buttonorange {
+	border:none;
+	background: linear-gradient(to top, #ea4b38, #f26843);
+	color:#FFFFFF;
+	
 }
+
+.buttonorange:hover,
+.buttonorange:focus {
+	border:none;
+	background: linear-gradient(to top, #ea6f5f, #f58668);
+	color:#FFFFFF;
+}
+
+.buttonorange:active {
+	border:none;
+	background: linear-gradient(to top, #e16241, #d74631);
+	color:#FFFFFF;
+}
+
+.hits-item:hover,
+.hits-item:focus {
+	background-color: #9bafa3;
+	border-radius:10px;
+		
+}
+
+.hit {
+	border-radius: 75px;
+}
+
+.about {
+	color: #000000;
+}
+
+.blog {
+	color: #000000;
+}
+
+.blog a {
+	color: #000000;
+}
+
+.blog a:hover,
+.blog a:focus {
+	color: #dc532f;
+}
+
+.subscribe {
+	color:#000000;
+}
+
+.location {
+	color:#000000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
