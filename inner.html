@@ -11,20 +11,20 @@
 			<a class="header-logo" href="index.html">
 				<img src="img/logo.svg" width="154" height="64" alt="Логотоп магазина «Глейси»">
 			</a>
-			<ul class="site-navigation-current">
-				<li><a href="catalog.html">Каталог</a></li>
+			<ul class="site-navigation">
+				<li class="site-navigation-current"><a href="catalog.html">Каталог</a></li>
 				<li><a href="deliveryandpayment.html">Доставка и оплата</a></li>
 				<li><a href="about.html">О Компании</a></li>
 			</ul>
 			<ul class="user-navigation">
 				<li class="search">
-					<button class="non-focused non-pressed"><img src="img/loupe.svg" width="17" height="17" alt="Поиск"></button>
+					<button type="button"><img src="img/loupe.svg" width="17" height="17" alt="Поиск"></button>
 				</li>
 				<li class="login-link">
-					<button class="non-focused non-pressed"><img src="img/entrance.svg" width="21" height="19" alt="Логин">Вход</button>
+					<button type="button"><img src="img/entrance.svg" width="21" height="19" alt="Логин">Вход</button>
 				</li>
 				<li class="basket">
-					<button class="non-focused non-pressed"><img src="img/basket-red.svg" width="21" height="20" alt="Корзина">2 товара</button> 
+					<button type="button"><img src="img/basket-red.svg" width="21" height="20" alt="Корзина">2 товара</button> 
 				</li>
 			</ul>
 			<ul class="info">
@@ -46,24 +46,24 @@
 			<h2 class="visually-hidden">Фильтры товаров</h2>
 			<p>
 			<form action="#" method="post">
-				<div class="filter-sort">
+				<div class="filterfield">
 					<p>Сортировка:</p>
 					<select name = "sort">
 						<option value="popularuty">По популяности</option>
 					<select>
 				</div>
-				<div class="filter-cost">
+				<div class="filterfield">
 					<p>Цена: </p>
 					<input type="range">
 				</div>
-				<div class="filter-fat">
+				<div class="filterfield">
 					<p>Жирность: </p>
 					<input type="radio" name="fat" value="0">0</input>
 					<input type="radio" name="fat" checked>до 10</input>
 					<input type="radio" name="fat">до 30</input>
 					<input type="radio" name="fat">выше 30</input>
 				<div>
-				<div class="filter-filler">
+				<div class="filterfield">
 					<p>Наполнители: </p>
 					<input type="checkbox" name="filler1" value="filler1" checked>Шоколадные</input>
 					<input type="checkbox" name="filler1" value="filler1" checked>Сахарные присыпки</input>
@@ -75,117 +75,104 @@
 			</form>
 		</section>
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 		<section class="catalog">
 			<h2 class="visually-hidden">Список сливочного мороженого </h2>
 			<ul class="catalog-list">
 				<li class="hits-item" tabindex=0>
-					<div class="catalog-item-image">
+					<div class="hits-item-image">
 						<img class="hit" src="img/1.jpg" width="150" height="150" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
 					</div>
 					<h4>310 <img src="img/ruble.svg" width="31" height="36" alt="РР">/кг</h4>
 					<p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
-					<button class="quick non-focused non-pressed">Быстрый просмотр</button>
+					<button type="button">Быстрый просмотр</button>
 				</li>
 				<li class="hits-item" tabindex=0>
-					<div class="catalog-item-image">
+					<div class="hits-item-image">
 						<img class="hit" src="img/2.jpg" width="150" height="150" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
 					</div>
 					<h4>310 <img src="img/ruble.svg" width="31" height="36" alt="РР">/кг</h4>
 					<p>Сливочное-кофейное с кусочками шоколада</p>
-					<button class="quick non-focused non-pressed">Быстрый просмотр</button>
+					<button type="button"Быстрый просмотр</button>
 				</li>
 				<li class="hits-item" tabindex=0>
-					<div class="catalog-item-image">
+					<div class="hits-item-image">
 						<img class="hit" src="img/3.jpg" width="150" height="150" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
 					</div>
 					<h4>310 <img src="img/ruble.svg" width="31" height="36" alt="РР">/кг</h4>
 					<p>Сливочно-клубничное с присыпкой из белого шоколада</p>
-					<button class="quick non-focused non-pressed">Быстрый просмотр</button>
+					<button type="button">Быстрый просмотр</button>
 				</li>
 				<li class="hits-item" tabindex=0>
-					<div class="catalog-item-image">
+					<div class="hits-item-image">
 						<img class="hit" src="img/4.jpg" width="150" height="150" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
 					</div>
 					<h4>310 <img src="img/ruble.svg" width="31" height="36" alt="РР">/кг</h4>
 					<p>Сливочное крем-брюле с карамельной подливкой</p>
-					<button class="quick non-focused non-pressed">Быстрый просмотр</button>
+					<button type="button">Быстрый просмотр</button>
 				</li>
 				<li class="hits-item" tabindex=0>
-					<div class="catalog-item-image">
+					<div class="hits-item-image">
 						<img class="hit" src="img/5.jpg" width="150" height="150" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
 					</div>
 					<h4>310 <img src="img/ruble.svg" width="31" height="36" alt="РР">/кг</h4>
 					<p>Сливочное крем-брюле с карамельной подливкой</p>
-					<button class="quick non-focused non-pressed">Быстрый просмотр</button>
+					<button type="button">Быстрый просмотр</button>
 				</li>
 				<li class="hits-item" tabindex=0>
-					<div class="catalog-item-image">
+					<div class="hits-item-image">
 						<img class="hit" src="img/6.jpg" width="150" height="150" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
 					</div>
 					<h4>310 <img src="img/ruble.svg" width="31" height="36" alt="РР">/кг</h4>
 					<p>Сливочно-черничное с цельными ягодами черники</p>
-					<button class="quick non-focused non-pressed">Быстрый просмотр</button>
+					<button type="button">Быстрый просмотр</button>
 				</li>
 				<li class="hits-item" tabindex=0>
-					<div class="catalog-item-image">
+					<div class="hits-item-image">
 						<img class="hit" src="img/7.jpg" width="150" height="150" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
 					</div>
 					<h4>310 <img src="img/ruble.svg" width="31" height="36" alt="РР">/кг</h4>
 					<p>Сливочно-лимонное с карамельной присыпкой</p>
-					<button class="quick non-focused non-pressed">Быстрый просмотр</button>
+					<button type="button">Быстрый просмотр</button>
 				</li>
 				<li class="hits-item" tabindex=0>
-					<div class="catalog-item-image">
+					<div class="hits-item-image">
 						<img class="hit" src="img/8.jpg" width="150" height="150" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
 					</div>
 					<h4>310 <img src="img/ruble.svg" width="31" height="36" alt="РР">/кг</h4>
 					<p>Сливочное с шоколадной стружкой</p>
-					<button class="quick non-focused non-pressed">Быстрый просмотр</button>
+					<button type="button">Быстрый просмотр</button>
 				</li>
 				<li class="hits-item" tabindex=0>
-					<div class="catalog-item-image">
+					<div class="hits-item-image">
 						<img class="hit" src="img/9.jpg" width="150" height="150" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
 					</div>
 					<h4>310 <img src="img/ruble.svg" width="31" height="36" alt="РР">/кг</h4>
 					<p>Сливочно-ванильное с кусочками шоколада</p>
-					<button class="quick non-focused non-pressed">Быстрый просмотр</button>
+					<button type="button"">Быстрый просмотр</button>
 				</li>
 				<li class="hits-item" tabindex=0>
-					<div class="catalog-item-image">
+					<div class="hits-item-image">
 						<img class="hit" src="img/10.jpg" width="150" height="150" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
 					</div>
 					<h4>310 <img src="img/ruble.svg" width="31" height="36" alt="РР">/кг</h4>
 					<p>Сливочное с ментоловым сиропом</p>
-					<button class="quick non-focused non-pressed">Быстрый просмотр</button>
+					<button type="button">Быстрый просмотр</button>
 				</li>
 				<li class="hits-item" tabindex=0>
-					<div class="catalog-item-image">
+					<div class="hits-item-image">
 						<img class="hit" src="img/11.jpg" width="150" height="150" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
 					</div>
 					<h4>310 <img src="img/ruble.svg" width="31" height="36" alt="РР">/кг</h4>
 					<p>Сливочное с кусочками черного шоколада</p>
-					<button class="quick non-focused non-pressed">Быстрый просмотр</button>
+					<button type="button">Быстрый просмотр</button>
 				</li>
 				<li class="hits-item" tabindex=0>
-					<div class="catalog-item-image">
+					<div class="hits-item-image">
 						<img class="hit" src="img/12.jpg" width="150" height="150" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
 					</div>
 					<h4>310 <img src="img/ruble.svg" width="31" height="36" alt="РР">/кг</h4>
 					<p>Сливочное с мятным сиропом</p>
-					<button class="quick non-focused non-pressed">Быстрый просмотр</button>
+					<button type="button">Быстрый просмотр</button>
 				</li>
 			</ul>
 			
@@ -223,6 +210,7 @@
 			Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> 2017
 		</div>
     </footer>
+	
 	<section class="catalog-popup">
 		<h2 class="visually-hidden">Каталог</h2>
 		<ul class="catalog-popup-list">
@@ -241,18 +229,18 @@
 	
 	<section class="login-link-popup">
 		<h2 class="visually-hidden">Форма входа</h2>
-		<form class="login-link-popup-form non-focused non-pressed" method="post" action="#">
+		<form class="login-link-popup-form" method="post" action="#">
 			<p><input type="text" placeholder="Электронная почта"></p>
 			<p><input type="password" placeholder="Пароль"></p>
-			<button class="login-link-popup-login non-focused non-pressed" type="submit">Войти</button>
+			<button class="buttonorange" type="submit">Войти</button>
 		</form>
 		<a href="pass-recovery.html">Забыли пароль?</a>
 		<a href="reg-new.html">Новая регистрация</a>
 	</section>
 	
-	<section class="login-link-popup">
+	<section class="basket-popup">
 		<h2 class="visually-hidden">Корзина</h2>
-		<button class="login-link-popup-login non-focused non-pressed" type="submit">Оформить заказ</button>
+		<button class="buttonorange" type="submit">Оформить заказ</button>
 	</section>
   </body>
 </html>
