@@ -1,0 +1,33 @@
+body {
+	margin: 0;
+	padding: 0;
+	
+	font-family: "Roboto", sans-serif;
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 700;
+	color: #ffffff;
+	text-transform: uppercase;
+	
+	background: linear-gradient(to top, #859d8f, #9cb0a5);
+}
+
+a {
+	text-decoration: underline;
+	color: #ffffff;
+}
+
+a:hover {
+	color: #dc532f;
+}
+
+
+
+.site-navigation a:hover {
+	color:#000000;
+	text-decoration:none;
+	background-color:#FFFFFF;
+}
+
+
+
