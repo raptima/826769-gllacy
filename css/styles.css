@@ -21,7 +21,16 @@ a:hover {
 	color: #dc532f;
 }
 
-
+.site-navigation,
+.user-navigation,
+.info,
+.hits-list,
+.about-list,
+.footer-social-list,
+.footer-about,
+.catalog-popup-list {
+	list-style:none;
+}
 
 .site-navigation a:hover {
 	color:#000000;
