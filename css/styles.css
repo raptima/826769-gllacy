@@ -82,11 +82,36 @@ a:focus {
 .footer-social-list a:hover {
 }
 
+
+.hits-item:hover,
+.hits-item:focus {
+	background-color: #9bafa3;
+	border-radius:10px;
+		
+}
+
+.hit {
+	border-radius: 75px;
+}
+
+.about,
+.blog,
+.blog a,
+.subscribe,
+.location {
+	color: #000000;
+}
+
+.blog a:hover,
+.blog a:focus {
+	color: #dc532f;
+}
+
+/*Оранжевая кнопка*/
 .buttonorange {
 	border:none;
 	background: linear-gradient(to top, #ea4b38, #f26843);
-	color:#FFFFFF;
-	
+	color:#FFFFFF;	
 }
 
 .buttonorange:hover,
@@ -102,70 +127,16 @@ a:focus {
 	color:#FFFFFF;
 }
 
-.hits-item:hover,
-.hits-item:focus {
-	background-color: #9bafa3;
-	border-radius:10px;
-		
-}
 
-.hit {
-	border-radius: 75px;
-}
-
-.about {
-	color: #000000;
-}
-
-.blog {
-	color: #000000;
-}
-
-.blog a {
-	color: #000000;
-}
-
-.blog a:hover,
-.blog a:focus {
-	color: #dc532f;
-}
-
-.subscribe {
-	color:#000000;
-}
-
-.location {
-	color:#000000;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-.user-nav-button {
-	border:none;
-	background:#a3b4aa;
-	color:#ffffff;
-}
-
+/*Пользовательская навигация*/
+.user-nav-button,
 .user-nav-button-basket {
 	border:none;
 	background:#a3b4aa;
 	color:#ffffff;
 }
 
-.user-nav-button .loupe {
-	fill:#ffffff;
-}
-
+.user-nav-button .loupe,
 .user-nav-button .entrance {
 	fill:#ffffff;
 }
@@ -174,36 +145,74 @@ a:focus {
 .user-nav-button:focus {
 	border:none;
 	background:#ffffff;
-	fill: #000000;
-	color:#000000;
-}
-.user-nav-button:focus .loupe,
-.user-nav-button:hover .loupe {
-	fill: #000000;
+	fill: #343434;
+	color:#343434;
 }
 
-.user-nav-button:focus .entrance,
-.user-nav-button:hover .entrance {
-	fill: #000000;
-}
-
-.user-nav-button-basket:focus, 
-.user-nav-button-basket:hover  {
+.user-nav-button-basket:hover,
+.user-nav-button-basket:focus {
+	border:none;
 	background:#ffffff;
-	color:#000000;
+	color:#343434;
 }
 
-.user-nav-button-basket:focus .img-basket,
-.user-nav-button-basket:hover .img-basket  {
-	background: url("../img/basket-red.svg");
+.user-nav-button:focus .loupe,
+.user-nav-button:hover .loupe,
+.user-nav-button:focus .entrance,
+.user-nav-button:hover .entrance  {
+	fill: #343434;
 }
 
+/*Пользовательская навигация-корзина*/
+.user-nav-button-basket .basket-border,
+.user-nav-button-basket .basket-round {
+	fill: #ffffff;
+}
 
+.user-nav-button-basket .basket-center {
+	fill: none;
+}
 
+.user-nav-button-basket:hover .basket-border,
+.user-nav-button-basket:hover .basket-round,
+.user-nav-button-basket:focus .basket-border,
+.user-nav-button-basket:focus .basket-round {
+	fill: #343434;
+}
 
+.user-nav-button-basket:hover .basket-center,
+.user-nav-button-basket:focus .basket-center {
+	fill: #e84d37;
+}
 
+.gallery-button .button-center,
+.gallery-button .button-border {
+	fill:
+}
 
+/*/*Кнопки галереи*/
+.gallery-button {
+	border:none;
+	background-color: rgba(0, 0, 0, 0);
+	color:#ffffff;
+}
 
+.gallery-button-img {
+	border:none;
+	background-color:#ffffff;
+	border-radius:10px;
+}
+
+.gallery-button:hover .gallery-button-img,
+.gallery-button:focus .gallery-button-img {
+	background-color: rgb(178,194,183)
+}
+
+.gallery-button:active .gallery-button-img {
+	background-color: #ffffff;
+}
+
+/*Кнопки социальных сетей*/
 
 
 
