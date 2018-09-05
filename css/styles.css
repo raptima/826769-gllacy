@@ -72,6 +72,46 @@ a:focus {
 	font-style:strong;
 }
 	
+.about,
+.blog,
+.blog a,
+.subscribe,
+.location {
+	color: #000000;
+}
+
+.site-navigation  {
+	font-size: 16px;
+	line-height: 18px;
+}
+	
+.user-navigation {
+	font-size: 14px;
+	line-height: 16px;
+}
+	
+.info .time {
+	font-size: 14px;
+	line-height: 16px;
+}
+
+.info .time {
+	font-size: 22px;
+	line-height: 24px;
+}
+	
+.gallery-content p {
+	font-size: 60px;
+	line-height: 60px;
+}	
+
+.gallery-content .buttonorange {
+	font-size: 32px;
+	line-height: 44px;
+}
+	
+/*Интерактивность*/	
+	
 .site-navigation a:hover,
 .site-navigation a:focus {
 	color:#000000;
@@ -82,24 +122,14 @@ a:focus {
 .footer-social-list a:hover {
 }
 
-
 .hits-item:hover,
 .hits-item:focus {
 	background-color: #9bafa3;
-	border-radius:10px;
-		
+	border-radius:10px;	
 }
 
 .hit {
 	border-radius: 75px;
-}
-
-.about,
-.blog,
-.blog a,
-.subscribe,
-.location {
-	color: #000000;
 }
 
 .blog a:hover,
@@ -198,14 +228,13 @@ a:focus {
 }
 
 .gallery-button-img {
-	border:none;
 	background-color:#ffffff;
 	border-radius:10px;
 }
 
 .gallery-button:hover .gallery-button-img,
 .gallery-button:focus .gallery-button-img {
-	background-color: rgb(178,194,183)
+	background-color: rgb(178,194,183);
 }
 
 .gallery-button:active .gallery-button-img {
@@ -213,7 +242,36 @@ a:focus {
 }
 
 /*Кнопки социальных сетей*/
+.social-button-twitter .twitter-img,
+.social-button-instagram .instagram-img,
+.social-button-facebook .facebook-img,
+.social-button-vkontakte .vkontakte-img{
+	fill: rgb(226,232,230);
+	border: 2px solid rgb(193,206,197);	
+	border-radius: 25px;
+}	
 
+.social-button-twitter:hover .twitter-img,
+.social-button-twitter:focus .twitter-img,
+.social-button-instagram:hover .instagram-img,
+.social-button-instagram:focus .instagram-img,
+.social-button-facebook:hover .facebook-img,
+.social-button-facebook:focus .facebook-img,
+.social-button-vkontakte:hover .vkontakte-img,
+.social-button-vkontakte:focus .vkontakte-img {
+	fill: rgb(255,255,255);
+	border: 2px solid rgb(223,228,224);	
+	border-radius: 25px;
+}	
+
+.social-button-twitter:avtive .twitter-img,
+.social-button-instagram:avtive .instagram-img,
+.social-button-facebook:avtive .facebook-img,
+.social-button-vkontakte:avtive .vkontakte-img{
+	fill: rgb(,231,231);
+	border: 2px solid rgb(220,225,221);	
+	border-radius: 25px;
+}	
 
 
 
