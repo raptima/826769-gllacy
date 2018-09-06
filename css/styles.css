@@ -33,12 +33,12 @@ a:focus {
 .catalog-popup-list a:hover,
 .catalog-popup-list a:focus {
 	background-color:#fbded8;
-	color:#000000;
+	color:#323232;
 }
 
 .catalog-popup-list a:active {
 	background-color:#f7b5a5;
-	color:#000000;
+	color:#323232;
 }
 
 .catalog-popup-list-current {
@@ -63,12 +63,12 @@ a:focus {
 }
 
 .catalog-popup-list a {
-	color:#000000;
+	color:#323232;
 	text-decoration:none;
 }
 
 .catalog-popup-title {
-	color:#000000;
+	color:#323232;
 	font-style:strong;
 }
 	
@@ -77,7 +77,7 @@ a:focus {
 .blog a,
 .subscribe,
 .location {
-	color: #000000;
+	color:#323232;
 }
 
 /*Текстовые данные, фоны*/
@@ -156,7 +156,7 @@ a:focus {
 }
 
 .mass {
-	font-size: 30px;
+	font-size: 25px;
 	line-height: 45px;
 }
 
@@ -225,7 +225,8 @@ a:focus {
 }
 
 .footer-about-list .footer-bold {
-	font-weight:bold
+	font-weight:bold;
+	color:#323232;
 }
 
 .footer-copyright {
@@ -259,6 +260,21 @@ a:focus {
 .search-popup {
 	font-size: 14px;
 	line-height: 24px;
+	background-color: #f8f7f4;
+}
+
+.link-popup {
+	font-size: 16px;
+	line-height: 24px;
+	background-color: #f8f7f4;
+}
+.link-popup-title {
+	font-size: 24px;
+	line-height: 28px;
+	color:#323232;
+}
+
+.basket-popup {
 	background-color: #f8f7f4;
 }
 
