@@ -1,13 +1,11 @@
 body {
 	margin: 0;
 	padding: 0;
-	
 	font-family: "Roboto", sans-serif;
 	font-size: 16px;
 	line-height: 22px;
-	font-weight: 700;
+	font-weight: 600;
 	color: #ffffff;
-	text-transform: uppercase;
 	/*background: linear-gradient(to top, #000000, #AAAAAA);*/
 	background: linear-gradient(to top, #859d8f, #9cb0a5);
 }
@@ -91,6 +89,7 @@ a:focus {
 .user-navigation {
 	font-size: 14px;
 	line-height: 16px;
+	font-family: roboto medium;
 }
 	
 .info .time {
@@ -114,15 +113,19 @@ a:focus {
 }
 
 .jam {
-	background:url("../img/malback.jpg");
-	background-position: 0 0;
+	background:url("../img/malback_n.jpg");
+	background-size: cover;
 	background-repeat: no-repeat;
+	border-radius: 25px;
+	padding: 22px 30px 25px 20px;
 }
 
 .choko {
-	background:url("../img/chokoback.jpg");
-	background-position: 0 0;
+	background:url("../img/chokoback_n.jpg");
+	background-size: cover;
 	background-repeat: no-repeat;
+	border-radius: 25px;
+	padding: 22px 30px 25px 20px;
 }
 
 .jam h3,
@@ -147,6 +150,11 @@ a:focus {
 	border-radius: 150px;
 }
 
+.hits-item {
+	padding: 7px 20px 15px 23px;
+	width: 290px;
+}
+
 .hits-item .description {
 	font-size: 16px;
 	line-height: 24px;
@@ -163,11 +171,14 @@ a:focus {
 }
 
 .about {
+	border-radius:30px;
 	background:url("../img/about-back.jpg");
 	background-position: 0 0;
 	background-repeat: no-repeat;
 	background-size: cover;
+	padding: 30px 35px 30px 20px;
 }
+
 
 .about h5 {
 	font-size: 24px;
@@ -177,12 +188,16 @@ a:focus {
 .about-item {
 	font-size: 16px;
 	line-height: 22px;
+	font-family:Roboto regular;
 }
 
 .blog {
+	height: 220px;
 	background:url("../img/strbwback.jpg");
-	background-position: 0 0;
+	background-size: cover;
 	background-repeat: no-repeat;
+	border-radius: 25px;
+	padding: 27px 0 0 23px;
 }
 
 .blog a {
@@ -191,24 +206,39 @@ a:focus {
 }
 
 .subscribe {
-	background:url("../img/bg-post.svg");
-	background-position: 0 0;
+	border: 5px solid;
+	border-radius: 25px;
+	height: 220px;
+	background: #f8f7f4;
+	background-size: cover;
 	background-repeat: no-repeat;
+	border-image: url("../img/bg-post.svg") 5 round;
 	font-size: 16px;
 	line-height: 22px;
+	padding:10px;
 }
 
 .emaiL {
 	font-size: 16px;
 	line-height: 24px;
+	background-color: 
 }
 
 .location {
+	height: 430px;
 	background:url("../img/maptip.jpg") 100% 100%;
 	background-position: 0 0;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+
+.location .contactinfo{
+	background-color:#fffefe;
+	padding: 35px 0px 30px 25px;
+	width: 302px;
+	border-radius: 30px;
+}
+
 
 .map-info-small {
 	font-size: 14px;
@@ -236,6 +266,15 @@ a:focus {
 	line-height: 18px;
 }
 	
+	
+.visually-hidden{
+	position: absolute;
+	clip: rect(0 0 0 0);
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+}
+
 /*Текстовые данные, фоны*/	
 	/*Всплывающие элементы*/
 .catalog-popup {
@@ -251,6 +290,7 @@ a:focus {
 	font-size: 14px;
 	line-height: 24px;
 	background-color: #f8f7f4;
+	padding: 20px 18px;
 }
 
 .login-link-popup-other {
@@ -263,12 +303,14 @@ a:focus {
 	font-size: 14px;
 	line-height: 24px;
 	background-color: #f8f7f4;
+	padding: 20px 16px;
 }
 
 .link-popup {
 	font-size: 16px;
 	line-height: 24px;
 	background-color: #f8f7f4;
+	padding: 20px 0 16px 25px;
 }
 .link-popup-title {
 	font-size: 24px;
@@ -278,6 +320,7 @@ a:focus {
 
 .basket-popup {
 	background-color: #f8f7f4;
+	padding: 20px 15px 21px 15px;
 }
 
 /*Текстовые данные, фоны*/
@@ -336,9 +379,6 @@ ul.breadcrumbs li {
 	background-repeat: no-repeat;
 }
 
-.data .triangle  {
-	fill: #ffffff;
-}
 
 
 /*Интерактивность*/	
@@ -394,18 +434,35 @@ ul.breadcrumbs li {
 	/*Пользовательская навигация*/
 .user-nav-button,
 .user-nav-button-basket {
+	height:32px;
+	border-radius:16px;
 	border:none;
 	background:#a3b4aa;
 	color:#ffffff;
+	display:flex;
+	align-items:center;
+	padding: 0 15px;
 }
 
-.user-nav-button .loupe,
+.user-nav-button-loupe {
+	height:32px;
+	width: 32px;
+	border-radius:16px;
+	border:none;
+	background:#a3b4aa;
+	color:#ffffff;
+	padding-top: 2px;
+}
+
+.user-nav-button-loupe .loupe,
 .user-nav-button .entrance {
 	fill:#ffffff;
 }
 
 .user-nav-button:hover,
-.user-nav-button:focus {
+.user-nav-button:focus,
+.user-nav-button-loupe:hover,
+.user-nav-button-loupe:focus {
 	border:none;
 	background:#ffffff;
 	fill: #343434;
@@ -420,8 +477,8 @@ ul.breadcrumbs li {
 	color:#343434;
 }
 
-.user-nav-button:focus .loupe,
-.user-nav-button:hover .loupe,
+.user-nav-button-loupe:focus .loupe,
+.user-nav-button-loupe:hover .loupe,
 .user-nav-button:focus .entrance,
 .user-nav-button:hover .entrance  {
 	fill: #343434;
