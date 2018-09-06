@@ -111,13 +111,15 @@ a:focus {
 }
 
 .jam {
+	background:url("../img/malback.jpg");
+	background-position: 0 0;
 	background-repeat: no-repeat;
-	background:url("../img/malback.jpg")
 }
 
 .choko {
+	background:url("../img/chokoback.jpg");
+	background-position: 0 0;
 	background-repeat: no-repeat;
-	background:url("../img/chokoback.jpg")
 }
 
 .jam h3,
@@ -133,9 +135,13 @@ a:focus {
 }
 
 .jam .buttonorange,
-.choko .buttonorange {
+.choko .buttonorange,
+.hits-item .buttonorange,
+.emaiL .buttonorange,
+.contactinfo .buttonorange {
 	font-size: 18px;
 	line-height: 24px;
+	vertical-align:middle;
 }
 
 .hit {
@@ -147,13 +153,21 @@ a:focus {
 	line-height: 24px;
 }
 
-.hits-item .buttonorange {
-	font-size: 18px;
-	line-height: 24px;
+.price {
+	font-size: 50px;
+	line-height: 45px;
+}
+
+.mass {
+	font-size: 30px;
+	line-height: 45px;
 }
 
 .about {
-	background:url("../img/about-back.jpg")
+	background:url("../img/about-back.jpg");
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .about h5 {
@@ -167,7 +181,9 @@ a:focus {
 }
 
 .blog {
-	background:url("../img/strbwback.jpg")
+	background:url("../img/strbwback.jpg");
+	background-position: 0 0;
+	background-repeat: no-repeat;
 }
 
 .blog a {
@@ -176,12 +192,25 @@ a:focus {
 }
 
 .subscribe {
-	background:url("../img/about-back.jpg")
+	background:url("../img/bg-post.svg");
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	font-size: 16px;
+	line-height: 22px;
 }
 
-.subscribe {
-	background:url("../img/bg-post.svg")
+.emaiL {
+	font-size: 16px;
+	line-height: 24px;
 }
+
+.location {
+	background:url("../img/map.jpg");
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
 
 	
 /*Интерактивность*/	
