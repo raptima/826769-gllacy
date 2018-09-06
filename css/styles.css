@@ -289,6 +289,30 @@ a:focus {
 	background-color:#d07058;
 }
 
+.breadcrumbs {
+	font-size: 14px;
+	line-height: 16px;
+	
+}
+
+ul.breadcrumbs li {
+	display: inline;
+}
+
+.page-title {
+	font-size: 35px;
+	line-height: 41px;
+}
+
+.filterfield {
+	font-size: 16px;
+	line-height: 18px;	
+}
+
+.filterfield p{
+	font-size: 14px;
+	line-height: 16px;	
+}
 
 /*Интерактивность*/	
 .site-navigation a:hover,
@@ -320,6 +344,8 @@ a:focus {
 	border:none;
 	background: linear-gradient(to top, #ea4b38, #f26843);
 	color:#FFFFFF;	
+	padding:12px;
+	border-radius: 30px;
 }
 
 .buttonorange:hover,
@@ -459,6 +485,10 @@ a:focus {
 	border: 2px solid rgb(220,225,221);	
 	border-radius: 25px;
 }	
+
+/*Интерактивность*/
+	/*INNER.HTML*/
+	
 
 
 
