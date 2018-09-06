@@ -292,7 +292,6 @@ a:focus {
 .breadcrumbs {
 	font-size: 14px;
 	line-height: 16px;
-	
 }
 
 ul.breadcrumbs li {
@@ -304,6 +303,10 @@ ul.breadcrumbs li {
 	line-height: 41px;
 }
 
+.filters-all {
+	color:#ffffff;
+}
+
 .filterfield {
 	font-size: 16px;
 	line-height: 18px;	
@@ -313,6 +316,30 @@ ul.breadcrumbs li {
 	font-size: 14px;
 	line-height: 16px;	
 }
+
+.confirmation {
+	color:#ffffff;
+}
+
+.data select {
+	color: #ffffff;
+	width: 190px;
+	height: 35px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	text-indent: 0.01px; 
+	-ms-appearance: none;
+	background:none;
+	border:none;
+	background-image: url("../img/icon-down-dir.svg");
+	background-position: right center;
+	background-repeat: no-repeat;
+}
+
+.data .triangle  {
+	fill: #ffffff;
+}
+
 
 /*Интерактивность*/	
 .site-navigation a:hover,
@@ -489,7 +516,18 @@ ul.breadcrumbs li {
 /*Интерактивность*/
 	/*INNER.HTML*/
 	
+.data {
+	background-color:#aabcb2;
+	padding:10px;
+	border-radius: 25px;
+}
 
+.confirmation {
+	border:none;
+	background-color:#aabcb2;
+	padding:10px;
+	border-radius: 25px;
+}
 
 
 
