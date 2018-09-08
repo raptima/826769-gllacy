@@ -807,6 +807,24 @@ ul.breadcrumbs li {
 	margin:auto;
 }
 
+.filters-top {
+	display:flex;
+}
 
+.filters-bottom {
+	display:flex;
+	flex-direction:column;
+}
 
+.catalog {
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+}
+
+.catalog ul {
+	flex-wrap:wrap;
+	display:flex;
+	flex-direction:row;
+}
 
