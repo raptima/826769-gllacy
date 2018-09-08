@@ -151,7 +151,6 @@ a:focus {
 }
 
 .hits-item {
-	padding: 7px 20px 15px 23px;
 	width: 290px;
 }
 
@@ -585,12 +584,45 @@ ul.breadcrumbs li {
 	padding:10px;
 	border-radius: 25px;
 }
+ 
+/*СЕТКИ*/
+html,
+body {
+	min-width:1200px;
+	min-height: 2416px;
+}
 
+.header-navigation {
+	 display: flex;
+	 flex-direction: column;
+ }
+ 
+.site-navigation,
+.user-navigation,
+.info {
+	margin:0;
+	padding:0;
+}
 
+.container {
+	width: 1200px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
 
+.gallery-content {
+	min-height: 831px;
+	width: 1200px;
+}
 
+.bonuses {
+	margin-top: -183px;
+}
 
-
+.jam,
+.choho {
+	padding: 18px 30px 24px 20px;
+}
 
 
 
