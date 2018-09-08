@@ -48,7 +48,8 @@ a:focus {
 .user-navigation,
 .info,
 .hits-list,
-.about-list,
+.about-list-left,
+.about-list-right,
 .footer-social-list,
 .footer-about-list,
 .catalog-popup-list,
@@ -639,22 +640,136 @@ ul.breadcrumbs li {
   margin-right: 15px;
 }
 
-.specialoffer .gallery-content {
-	display:block;
-	margin-top: -196px;
+.specialoffer1,
+.specialoffer2,
+.specialoffer3 {
+	display:flex;
+	flex-direction:column;
+}
+
+.gallery-content1 {
+	margin-top:-195px;
+	display:flex;
+	flex-direction:column;
+	justify-content:flex-end;
+	background:url("../img/Ice-Cream_light.png");
+	background-position:cover;
+	background-repeat:no-repeat;
+	height: 880px;
+}
+
+.gallery-content1  p{
+	text-align:center;
 	margin-left: auto;
 	margin-right: auto;
-	
-	
+	font-size: 60px;
+	line-height: 60px;
+}
+
+.gallery-content1  .buttonorange{
+	text-align:center;
+	margin-left: auto;
+	margin-right: auto;	
+	font-size: 32px;
+	line-height: 44px;
+	margin-bottom: 270px;
+}
+.bonuses {
+	display:flex;
+	justify-content:space-between;
+}
+
+.jam {
+	display:flex;
+	flex-direction:column;
+	width:535px;
+}
+
+.jam h3 {
+	display:flex;
+	margin-top: 5px;
+}
+
+.jam p {
+	display:flex;
+	margin-top: 1px;
+}
+
+.jam .buttonorange {
+	display:flex;
+	align-self:flex-end;
 }
 
 
+.choko {
+	display:flex;
+	flex-direction:column;
+	width:535px;
+}
 
+.choko h3 {
+	display:flex;
+	margin-top: 5px;
+}
 
+.choko p {
+	display:flex;
+	margin-top: 1px;
+}
 
+.choko .buttonorange {
+	display:flex;
+	align-self:flex-end;
+}
 
+.hits {
+	display:flex;
+	flex-direction:row;
+}
 
+.hits ul {
+	display:flex;
+	flex-direction:row;
+}
 
+.about  {
+	display-flex;
+	flex-direction:row;
+}
+
+.about h5 {
+	text-align: left
+}
+
+.about-list-left {
+	display:flex;
+	
+}
+
+.about-list-right {
+	display:flex;
+	
+}
+
+.blog_subscribe {
+	margin-top:10px;
+	display:flex;
+	justify-content:space-between;
+}
+
+.blog {
+	display:flex;
+	width: 560px;
+}
+
+.subscribe {
+	display:flex;
+	width: 560px;
+}
+
+.location {
+	margin-top:10px;
+}
 
 
 
