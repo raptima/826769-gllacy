@@ -440,7 +440,8 @@ ul.breadcrumbs li {
 	color:#ffffff;
 	display:flex;
 	align-items:center;
-	padding: 0 15px;
+	padding: 0 20px;
+	margin-right:10px
 }
 
 .user-nav-button-loupe {
@@ -451,6 +452,7 @@ ul.breadcrumbs li {
 	background:#a3b4aa;
 	color:#ffffff;
 	padding-top: 2px;
+	margin-right:10px
 }
 
 .user-nav-button-loupe .loupe,
@@ -593,35 +595,41 @@ body {
 }
 
 .header-navigation {
-	 display: flex;
-	 flex-direction: column;
- }
- 
+	display:flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+.header-logo,
 .site-navigation,
-.user-navigation,
-.info {
-	margin:0;
-	padding:0;
+.user-navigation {
+	display:flex;
 }
 
-.container {
-	width: 1200px;
-	margin: 0 auto;
-	padding: 0 10px;
+.site-navigation a{
+	 display: block;
+	 padding: 7px 14px;
+	 vertical-align: middle;
+	 border-radius:15px;
 }
 
-.gallery-content {
-	min-height: 831px;
-	width: 1200px;
+.login-link .user-nav-button{
+	vertical-align: middle;
+	border-radius:15px;
+	width: 92px;
+	text-align: justify;
 }
 
-.bonuses {
-	margin-top: -183px;
+.login-link .user-nav-button-basket{
+	vertical-align: middle;
+	border-radius:15px;
+	width: 100px;
+	text-align: justify;
 }
 
-.jam,
-.choho {
-	padding: 18px 30px 24px 20px;
+.header-top {
+	display: flex;
+	
 }
 
 
