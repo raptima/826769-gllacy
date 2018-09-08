@@ -51,7 +51,8 @@ a:focus {
 .about-list-left,
 .about-list-right,
 .footer-social-list,
-.footer-about-list,
+.footer-about-list-left,
+.footer-about-list-right,
 .catalog-popup-list,
 .catalog-list,
 .breadcrumbs {
@@ -768,10 +769,43 @@ ul.breadcrumbs li {
 }
 
 .location {
+	display:flex;
 	margin-top:10px;
+	flex-direction:row-reverse;
 }
 
+.contactinfo {
+	height:270px;
+	margin: 50px 20px;
+}
 
+.footer {
+	display:flex;
+	flex-direction:row;
+}
+
+.footer-social-list {
+	display:flex;
+	flex-direction:row;
+}
+
+.footer-about {
+	display:flex;
+	flex-direction:column;
+}
+
+.footer-about-list {
+	display:flex;
+	flex-direction:row;
+	margin-left: 230px;
+}
+
+.footer-copyright {
+	display:flex;
+	flex-direction:column;
+	width: 300px;
+	margin:auto;
+}
 
 
 
