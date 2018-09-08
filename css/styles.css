@@ -588,22 +588,29 @@ ul.breadcrumbs li {
 }
  
 /*СЕТКИ*/
-html,
-body {
-	min-width:1200px;
-	min-height: 2416px;
+.container {
+	width: 100%;
+	max-width: 1200px;
+	padding: 10px 27px 26px 27px;
 }
 
-.header-navigation {
-	display:flex;
-	flex-direction: column;
-	flex-wrap: wrap;
+.header-top {
+  display: flex;
+  align-items: center;
 }
-
-.header-logo,
-.site-navigation,
 .user-navigation {
-	display:flex;
+  margin-left: auto;
+}
+
+.header-logo {
+  display: block;
+  margin-right: 30px;
+}
+
+.site-navigation {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
 }
 
 .site-navigation a{
@@ -613,22 +620,31 @@ body {
 	 border-radius:15px;
 }
 
-.login-link .user-nav-button{
-	vertical-align: middle;
-	border-radius:15px;
-	width: 92px;
-	text-align: justify;
+.site-navigation li:not(:last-child) {
+  margin-right: 15px;
 }
 
-.login-link .user-nav-button-basket{
-	vertical-align: middle;
-	border-radius:15px;
-	width: 100px;
-	text-align: justify;
+.header-bottom {
+  display: flex;
+  flex-direction: row-reverse;
 }
 
-.header-top {
-	display: flex;
+.user-navigation {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+
+.user-navigation li:not(:last-child) {
+  margin-right: 15px;
+}
+
+.specialoffer .gallery-content {
+	display:block;
+	margin-top: -196px;
+	margin-left: auto;
+	margin-right: auto;
+	
 	
 }
 
