@@ -203,20 +203,22 @@
 		</ul>
 	</section>
 	<br><br>
-	<section class="search-popup">
+	<section class="search-popup-none">
 		<h2 class="visually-hidden">Поиск</h2>
-		<input type="text" placeholder="Что ищем?">
+		<input type="text" name = "searchtext" placeholder="Что ищем?">
 	</section>
 	<br><br>
-	<section class="login-link-popup">
+	<section class="login-link-popup-none">
 		<h2 class="visually-hidden">Форма входа</h2>
 		<form class="login-link-popup-form" method="post" action="#">
-			<p><input type="text" placeholder="Электронная почта"></p>
-			<p><input type="password" placeholder="Пароль"></p>
+			<input type="text" name="loginlinktext" placeholder="Электронная почта"><
+			<input type="password" placeholder="Пароль"><
 			<button class="buttonorange" type="submit">Войти</button>
 		</form>
-		<a class="login-link-popup-other" href="pass-recovery.html">Забыли пароль?</a>
-		<a class="login-link-popup-other" href="reg-new.html">Новая регистрация</a>
+		<div class="login-link-popup-other">
+			<a href="pass-recovery.html">Забыли пароль?</a>
+			<a href="reg-new.html">Новая регистрация</a>
+		</div>
 	</section>
 	<br><br>
 	<section class="basket-popup">
@@ -234,5 +236,43 @@
 			<button class="buttonorange" type="submit">Отправить</button>
 		</form>
 	</section>
+	<script>
+		var search = document.querySelector(".search");
+		var searchpopup = document.querySelector(".search-popup-none")
+		var searchpopuptext = searchpopup.querySelector("[name=searchtext]")
+		
+		var loginlink = document.querySelector(".login-link")
+		var loginlinkpopup = document.querySelector(".login-link-popup-none")
+		var loginlinkpopuptext = loginlinkpopup.querySelector("[name=loginlinktext]")
+		
+		search.addEventListener("mouseenter", function (evt) {
+			evt.preventDefault();
+			searchpopup.classList.add("search-popup");
+			searchpopuptext.focus();
+		});
+		loginlink.addEventListener("mouseenter", function (evt) {
+			evt.preventDefault();
+			loginlinkpopup.classList.add("login-link-popup");
+			loginlinkpopuptext.focus();
+		});
+		
+		window.addEventListener("keydown", function (evt) {
+			if (evt.keyCode===27) {
+			if (searchpopup.classList.contains("search-popup")) {
+				evt.preventDefault();
+				searchpopup.classList.remove("search-popup");
+				}
+			}
+		});
+		
+		window.addEventListener("keydown", function (evt) {
+			if (evt.keyCode===27) {
+			if (loginlinkpopup.classList.contains("login-link-popup")) {
+				evt.preventDefault();
+				loginlinkpopup.classList.remove("login-link-popup");
+				}
+			}
+		});
+	</script>
   </body>
 </html>
