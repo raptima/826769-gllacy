@@ -133,7 +133,7 @@ a:focus {
 
 .jam h3,
 .choko h3 {
-	font-size: 32px;
+	font-size: 32px;
 	line-height: 44px;
 }
 
@@ -149,6 +149,12 @@ a:focus {
 	vertical-align:middle;
 }
 
+.buttonorangeh {
+	font-size: 18px;
+	line-height: 24px;
+	vertical-align:middle;
+}
+
 .hit {
 	border-radius: 150px;
 }
@@ -157,7 +163,7 @@ a:focus {
 	display: flex;
 	flex-direction: column;
 	width: 270px;
-	height: 350px;
+	height: 380px;
 	padding: 15px;
 
 }
@@ -391,13 +397,35 @@ a:focus {
 	display:flex;
 }
 	
-.catalog-popup {
+.catalog-popup-none {
+	display: none;
+	font-family:Roboto regular;
 	font-size: 14px;
 	line-height: 16px;
+	box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+	width: 120px;
+}
+
+.catalog-popup {
+	display:block
 }
 
 .catalog-popup-list {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 	background-color: #f8f7f4;
+    border-radius: 6px;
+    padding: 10px;
+	height: 120px;
+	position: absolute;
+    top: 35px;
+    left: 260px;
+	box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+}
+
+.catalog-popup-item a {
+	font-family:Roboto regular;
 }
 	
 .link-popup {
@@ -417,6 +445,8 @@ a:focus {
 	background-color: #f8f7f4;
 	padding: 20px 15px 21px 15px;
 }
+
+
 
 /*Текстовые данные, фоны*/	
 	/*Всплывающие элементы*/
@@ -542,6 +572,30 @@ ul.breadcrumbs li {
 }
 
 .buttonorange:active {
+	box-shadow: 0px -2px 0px 0px rgba(172, 16, 0, 10.64);
+	border:none;
+	background: linear-gradient(to top, #e16241, #d74631);
+	color:#FFFFFF;
+}
+
+.buttonorangeh {
+	box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+	border:none;
+	background: linear-gradient(to top, #ea4b38, #f26843);
+	color:#FFFFFF;	
+	padding:12px;
+	border-radius: 30px;
+}
+
+.buttonorangeh:hover,
+.buttonorangeh:focus {
+	box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 10.64);
+	border:none;
+	background: linear-gradient(to top, #ea6f5f, #f58668);
+	color:#FFFFFF;
+}
+
+.buttonorangeh:active {
 	box-shadow: 0px -2px 0px 0px rgba(172, 16, 0, 10.64);
 	border:none;
 	background: linear-gradient(to top, #e16241, #d74631);
@@ -769,7 +823,7 @@ ul.breadcrumbs li {
 }
 
 .gallery-content1 {
-	margin-top:-150px;
+	margin-top:-592px;
 	display:flex;
 	flex-direction:column;
 	justify-content:flex-end;
@@ -799,9 +853,10 @@ ul.breadcrumbs li {
 .bonuses {
 	display:flex;
 	justify-content:space-between;
+	margin-top: -240px;
 }
 .gallery {
-	margin-top: -320px;
+	margin-top: 415px;
 }
 
 .jam {
@@ -824,7 +879,6 @@ ul.breadcrumbs li {
 	display:flex;
 	align-self:flex-end;
 }
-
 
 .choko {
 	display:flex;

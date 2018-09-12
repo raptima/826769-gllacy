@@ -17,7 +17,7 @@
 				</a>	
 				<nav class="header-navigation">
 					<ul class="site-navigation header-top">
-						<li><a href="catalog.html">Каталог</a></li>
+						<li><a class="catalogp" href="catalog.html">Каталог</a></li>
 						<li><a href="deliveryandpayment.html">Доставка и оплата</a></li>
 						<li><a href="about.html">О Компании</a></li>
 					</ul>
@@ -26,6 +26,10 @@
 						<li class="search">
 							<button type="button" class="user-nav-button-loupe"><svg class="loupe" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17"><path d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/></svg></button>
 						</li>
+						<section class="search-popup-none">
+		<h2 class="visually-hidden">Поиск</h2>
+		<input type="text" name = "searchtext" placeholder="Что ищем?">
+	</section>
 						<li class="login-link">
 							<button type="button" class="user-nav-button"><svg class="entrance "xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="19" viewBox="0 0 21 19"><g><path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z"/><path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"/></g></svg>Вход</button>
 						</li>	
@@ -47,6 +51,11 @@
 		<h1 class="visually-hidden">Магазин мороженого «Глейси»</h1>
 		<section class="specialoffer">
 			<h2 class="visually-hidden">Спец-предложения</h2>
+			<div class="gallery">
+				<button type="button" class="gallery-button"><img class="gallery-button-img" src="img/gallery-button.png"></button>
+				<button type="button" class="gallery-button"><img class="gallery-button-img" src="img/gallery-button.png"></button>
+				<button type="button" class="gallery-button"><img class="gallery-button-img" src="img/gallery-button.png"></button>
+			</div>
 			<div class="gallery-content1">
 				<p>Крем-брюле и пломбир с малиновым джемом</p>
 				<button type="button" class="buttonorange">Давайте оба!</button>
@@ -61,11 +70,6 @@
 				<p>Крем-брюле и пломбир с малиновым джемом</p>
 				<button type="button" class="buttonorange">Давайте оба!</button>
 			</div>-->
-			<div class="gallery">
-				<button type="button" class="gallery-button"><img class="gallery-button-img" src="img/gallery-button.png"></button>
-				<button type="button" class="gallery-button"><img class="gallery-button-img" src="img/gallery-button.png"></button>
-				<button type="button" class="gallery-button"><img class="gallery-button-img" src="img/gallery-button.png"></button>
-			</div>
 		</section>	
 		
 		<section class="bonuses">
@@ -92,7 +96,7 @@
 					<img class="hitsvg" src="img/hit.svg" width="61" height="61" alt="Хит">
 					<p><span class="price">310</span> <img src="img/ruble.svg" width="31" height="36" alt="РР"><span class="mass">/кг<span></p>
 					<a href="#" class="description">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-					<button type="button" class="buttonorange visually-hidden">Быстрый просмотр</button>
+					<button type="button" class="buttonorangeh visually-hidden">Быстрый просмотр</button>
 				</li>
 				<li class="hits-item" tabindex=0>
 					<div class="hits-item-image">
@@ -101,7 +105,7 @@
 					<img class="hitsvg" src="img/hit.svg" width="61" height="61" alt="Хит">
 					<p><span class="price">380</span> <img src="img/ruble.svg" width="31" height="36" alt="РР"><span class="mass">/кг<span></p>
 					<a href="#" class="description">Сливочно-кофейное с кусочками шоколада</a>
-					<button type="button" class="buttonorange visually-hidden">Быстрый просмотр</button>
+					<button type="button" class="buttonorangeh visually-hidden">Быстрый просмотр</button>
 				</li>
 				<li class="hits-item" tabindex=0>
 					<div class="hits-item-image">
@@ -110,7 +114,7 @@
 					<img class="hitsvg" src="img/hit.svg" width="61" height="61" alt="Хит">
 					<p><span class="price">355</span> <img src="img/ruble.svg" width="31" height="36" alt="РР"><span class="mass">/кг<span></p>
 					<a href="#" class="description">Сливочно-клубничное с присыпкой из белого шоколада</a>
-					<button type="button" class="buttonorange visually-hidden">Быстрый просмотр</button>
+					<button type="button" class="buttonorangeh visually-hidden">Быстрый просмотр</button>
 				</li>
 				<li class="hits-item" tabindex=0>
 					<div class="hits-item-image">
@@ -119,7 +123,7 @@
 					<img class="hitsvg" src="img/hit.svg" width="61" height="61" alt="Хит">
 					<p><span class="price">415</span> <img src="img/ruble.svg" width="31" height="36" alt="РР"><span class="mass">/кг<span></p>
 					<a href="#" class="description">Сливочное крем-брюле с карамельной подливкой</a>
-					<button type="button" class="buttonorange visually-hidden">Быстрый просмотр</button>
+					<button type="button" class="buttonorangeh visually-hidden">Быстрый просмотр</button>
 				</li>
 			</ul>
 		</section>
@@ -194,8 +198,8 @@
 		</div>
     </footer> 
 	
-	<!--
-	<section class="catalog-popup">
+	
+	<section class="catalog-popup-none">
 		<h2 class="visually-hidden">Каталог</h2>
 		<ul class="catalog-popup-list">
 			<li class="catalog-popup-title"><b>Новинки</b></li><hr> 
@@ -205,12 +209,9 @@
 			<li class="catalog-popup-item"><a href="#">Мелорин</a></li>
 		</ul>
 	</section>
-	-->
+
 	<br><br>
-	<section class="search-popup-none">
-		<h2 class="visually-hidden">Поиск</h2>
-		<input type="text" name = "searchtext" placeholder="Что ищем?">
-	</section>
+	
 	<br><br>
 	<section class="login-link-popup-none">
 		<h2 class="visually-hidden">Форма входа</h2>
@@ -225,15 +226,14 @@
 		</div>
 	</section>
 	<br><br>
-	<!--
-	<section class="basket-popup">
+	
+	<section class="basket-popup-none">
 		<h2 class="visually-hidden">Корзина</h2>
 		<button class="buttonorange" type="submit">Оформить заказ</button>
 	</section>
 	<br><br>
-	-->
+
 	
-	<!--
 	<section class="link-popup">
 		<h2 class="visually-hidden">Форма обратной связи</h2>
 		<span class="link-popup-title">Мы обязательно вам ответим!</span>
@@ -244,16 +244,40 @@
 			<button class="buttonorange" type="submit">Отправить</button>
 		</form>
 	</section>
-	-->
+	
 	<script>
 		var search = document.querySelector(".search");
 		var searchbutton = document.querySelector(".user-nav-button-loupe");
-		var searchpopup = document.querySelector(".search-popup-none")
-		var searchpopuptext = searchpopup.querySelector("[name=searchtext]")
+		var searchpopup = document.querySelector(".search-popup-none");
+		var searchpopuptext = searchpopup.querySelector("[name=searchtext]");
 		
-		var loginlink = document.querySelector(".login-link")
-		var loginlinkpopup = document.querySelector(".login-link-popup-none")
-		var loginlinkpopuptext = loginlinkpopup.querySelector("[name=loginlinktext]")
+		var loginlink = document.querySelector(".login-link");
+		var loginlinkbutton = document.querySelector(".user-nav-button");
+		var loginlinkpopup = document.querySelector(".login-link-popup-none");
+		var loginlinkpopuptext = loginlinkpopup.querySelector("[name=loginlinktext]");
+		
+		var catalog = document.querySelector(".catalogp");
+		var catalogpopup = document.querySelector(".catalog-popup-none");
+		var catalogpopuptext = catalogpopup.querySelector(".catalog-popup-item")
+		
+		var card = document.querySelectorAll(".hits-item");
+		var cardpopup = document.querySelectorAll(".buttonorangeh")
+		
+		for (var i = 0; i < card.length; i++) {
+			r = card[i];
+			r.addEventListener('mouseenter', function () {
+				cardpopup.classList.remove("visually-hidden")
+			});
+		}
+		card.addEventListener("focus", function () {
+			cardpopup.classList.remove("visually-hidden")
+		});
+		card.addEventListener("mouseleave", function () {
+			cardpopup.classList.add("visually-hidden")
+		});
+		card.addEventListener("blur", function () {
+			cardpopup.classList.add("visually-hidden")
+		});
 		
 		
 		
@@ -271,28 +295,16 @@
 		});
 		searchbutton.addEventListener("onblur", function (evt) {
 			evt.preventDefault();
+			searchpopuptext.blur();
 			searchpopup.classList.remove("search-popup");
 		});
-
-		
-		
-		
-		
-		
-		
-		
-		
-		loginlink.addEventListener("mouseenter", function (evt) {
-			evt.preventDefault();
-			loginlinkpopup.classList.add("login-link-popup");
-			loginlinkpopuptext.focus();
+		window.addEventListener("keydown", function (evt) {
+			if (evt.keyCode===9) {
+			if (searchpopup.classList.contains("search-popup")) {
+				searchpopup.classList.remove("search-popup");
+				}
+			}
 		});
-		loginlink.addEventListener("mouseleave", function (evt) {
-			evt.preventDefault();
-			loginlinkpopup.classList.remove("login-link-popup");
-			loginlinkpopuptext.focus();
-		});
-
 		window.addEventListener("keydown", function (evt) {
 			if (evt.keyCode===27) {
 			if (searchpopup.classList.contains("search-popup")) {
@@ -302,6 +314,22 @@
 			}
 		});
 		
+		
+		
+		loginlink.addEventListener("mouseenter", function (evt) {
+			evt.preventDefault();
+			loginlinkpopup.classList.add("login-link-popup");
+			loginlinkpopuptext.focus();
+		});
+		loginlinkbutton.addEventListener("focus", function (evt) {
+			evt.preventDefault();
+			loginlinkpopup.classList.add("login-link-popup");
+			loginlinkpopuptext.focus();
+		});
+		loginlinkbutton.addEventListener("onblur", function (evt) {
+			evt.preventDefault();
+			loginlinkpopup.classList.remove("login-link-popup");
+		});
 		window.addEventListener("keydown", function (evt) {
 			if (evt.keyCode===27) {
 			if (loginlinkpopup.classList.contains("login-link-popup")) {
@@ -310,6 +338,35 @@
 				}
 			}
 		});
+		
+		
+		catalog.addEventListener("mouseenter", function (evt) {
+			evt.preventDefault();
+			catalogpopup.classList.add("catalog-popup");
+			catalogpopuptext.focus();
+		});
+		catalog.addEventListener("focus", function (evt) {
+			evt.preventDefault();
+			catalogpopup.classList.add("catalog-popup");
+			catalogpopuptext.focus();
+		});
+		window.addEventListener("keydown", function (evt) {
+			if (evt.keyCode===27) {
+			if (catalogpopup.classList.contains("catalog-popup")) {
+				evt.preventDefault();
+				catalogpopup.classList.remove("catalog-popup");
+				}
+			}
+		});
+		
+		
+		
+		
+		
+		
+		
+		
+		
 	</script>
   </body>
 </html>
