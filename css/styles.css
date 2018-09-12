@@ -158,6 +158,8 @@ a:focus {
 	flex-direction: column;
 	width: 270px;
 	padding: 15px;
+    justify-content: space-between;
+
 }
 
 .hits-item .description {
@@ -203,6 +205,9 @@ a:focus {
 }
 
 .about-item {
+	display: flex;
+	align-items:baseline;
+	width: 600px;
 	font-size: 16px;
 	line-height: 22px;
 	font-family:Roboto regular;
@@ -238,7 +243,6 @@ a:focus {
 .emaiL {
 	font-size: 16px;
 	line-height: 24px;
-	background-color: 
 }
 
 .location {
@@ -483,6 +487,14 @@ ul.breadcrumbs li {
 
 .catalog-list p {
 	margin-top:-65px;
+}
+
+.pagination-list {
+	margin-left:auto;
+}
+
+.pagination-list li:not(:last-child) {
+	margin-right: 15px;
 }
 
 
