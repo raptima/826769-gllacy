@@ -92,7 +92,7 @@
 					<img class="hitsvg" src="img/hit.svg" width="61" height="61" alt="Хит">
 					<p><span class="price">310</span> <img src="img/ruble.svg" width="31" height="36" alt="РР"><span class="mass">/кг<span></p>
 					<a href="#" class="description">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-					<button type="button" class="buttonorange">Быстрый просмотр</button>
+					<button type="button" class="buttonorange visually-hidden">Быстрый просмотр</button>
 				</li>
 				<li class="hits-item" tabindex=0>
 					<div class="hits-item-image">
@@ -101,7 +101,7 @@
 					<img class="hitsvg" src="img/hit.svg" width="61" height="61" alt="Хит">
 					<p><span class="price">380</span> <img src="img/ruble.svg" width="31" height="36" alt="РР"><span class="mass">/кг<span></p>
 					<a href="#" class="description">Сливочно-кофейное с кусочками шоколада</a>
-					<button type="button" class="buttonorange">Быстрый просмотр</button>
+					<button type="button" class="buttonorange visually-hidden">Быстрый просмотр</button>
 				</li>
 				<li class="hits-item" tabindex=0>
 					<div class="hits-item-image">
@@ -110,7 +110,7 @@
 					<img class="hitsvg" src="img/hit.svg" width="61" height="61" alt="Хит">
 					<p><span class="price">355</span> <img src="img/ruble.svg" width="31" height="36" alt="РР"><span class="mass">/кг<span></p>
 					<a href="#" class="description">Сливочно-клубничное с присыпкой из белого шоколада</a>
-					<button type="button" class="buttonorange">Быстрый просмотр</button>
+					<button type="button" class="buttonorange visually-hidden">Быстрый просмотр</button>
 				</li>
 				<li class="hits-item" tabindex=0>
 					<div class="hits-item-image">
@@ -119,7 +119,7 @@
 					<img class="hitsvg" src="img/hit.svg" width="61" height="61" alt="Хит">
 					<p><span class="price">415</span> <img src="img/ruble.svg" width="31" height="36" alt="РР"><span class="mass">/кг<span></p>
 					<a href="#" class="description">Сливочное крем-брюле с карамельной подливкой</a>
-					<button type="button" class="buttonorange">Быстрый просмотр</button>
+					<button type="button" class="buttonorange visually-hidden">Быстрый просмотр</button>
 				</li>
 			</ul>
 		</section>
@@ -128,7 +128,7 @@
 			<h2 class="visually-hidden">Информация</h2>
 			<h5>Магазин Глэйси - это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h5>
 				<ul class="about-list-left">
-					<li class="about-item"><img src="img/ice-cream.svg" width="49" height="49" alt="мороженое">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
+					<li class="about-item"><img src="img/ice-cream.svg" width="49" height="49" alt="мороженое"><p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p></li>
 					<li class="about-item"><img src="img/cow.svg" width="49" height="49" alt="корова">Закупка ингридиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li>
 				</ul>
 				<ul class="about-list-right">
@@ -240,6 +240,7 @@
 	</section>
 	<script>
 		var search = document.querySelector(".search");
+		var searchbutton = document.querySelector(".user-nav-button-loupe");
 		var searchpopup = document.querySelector(".search-popup-none")
 		var searchpopuptext = searchpopup.querySelector("[name=searchtext]")
 		
@@ -247,17 +248,48 @@
 		var loginlinkpopup = document.querySelector(".login-link-popup-none")
 		var loginlinkpopuptext = loginlinkpopup.querySelector("[name=loginlinktext]")
 		
+		
+		
+		
+		
 		search.addEventListener("mouseenter", function (evt) {
 			evt.preventDefault();
 			searchpopup.classList.add("search-popup");
 			searchpopuptext.focus();
 		});
+		search.addEventListener("mouseleave", function (evt) {
+			evt.preventDefault();
+			searchpopup.classList.remove("search-popup");
+		});
+		searchbutton.addEventListener("focus", function (evt) {
+			evt.preventDefault();
+			searchpopup.classList.add("search-popup");
+			searchpopuptext.focus();
+		});
+		searchbutton.addEventListener("blur", function (evt) {
+			evt.preventDefault();
+			searchpopup.classList.remove("search-popup");
+		});
+
+		
+		
+		
+		
+		
+		
+		
+		
 		loginlink.addEventListener("mouseenter", function (evt) {
 			evt.preventDefault();
 			loginlinkpopup.classList.add("login-link-popup");
 			loginlinkpopuptext.focus();
 		});
-		
+		loginlink.addEventListener("mouseleave", function (evt) {
+			evt.preventDefault();
+			loginlinkpopup.classList.remove("login-link-popup");
+			loginlinkpopuptext.focus();
+		});
+
 		window.addEventListener("keydown", function (evt) {
 			if (evt.keyCode===27) {
 			if (searchpopup.classList.contains("search-popup")) {
