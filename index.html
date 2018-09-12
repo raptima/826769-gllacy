@@ -194,6 +194,7 @@
 		</div>
     </footer> 
 	
+	<!--
 	<section class="catalog-popup">
 		<h2 class="visually-hidden">Каталог</h2>
 		<ul class="catalog-popup-list">
@@ -204,6 +205,7 @@
 			<li class="catalog-popup-item"><a href="#">Мелорин</a></li>
 		</ul>
 	</section>
+	-->
 	<br><br>
 	<section class="search-popup-none">
 		<h2 class="visually-hidden">Поиск</h2>
@@ -223,11 +225,15 @@
 		</div>
 	</section>
 	<br><br>
+	<!--
 	<section class="basket-popup">
 		<h2 class="visually-hidden">Корзина</h2>
 		<button class="buttonorange" type="submit">Оформить заказ</button>
 	</section>
 	<br><br>
+	-->
+	
+	<!--
 	<section class="link-popup">
 		<h2 class="visually-hidden">Форма обратной связи</h2>
 		<span class="link-popup-title">Мы обязательно вам ответим!</span>
@@ -238,6 +244,7 @@
 			<button class="buttonorange" type="submit">Отправить</button>
 		</form>
 	</section>
+	-->
 	<script>
 		var search = document.querySelector(".search");
 		var searchbutton = document.querySelector(".user-nav-button-loupe");
@@ -257,16 +264,12 @@
 			searchpopup.classList.add("search-popup");
 			searchpopuptext.focus();
 		});
-		search.addEventListener("mouseleave", function (evt) {
-			evt.preventDefault();
-			searchpopup.classList.remove("search-popup");
-		});
 		searchbutton.addEventListener("focus", function (evt) {
 			evt.preventDefault();
 			searchpopup.classList.add("search-popup");
 			searchpopuptext.focus();
 		});
-		searchbutton.addEventListener("blur", function (evt) {
+		searchbutton.addEventListener("onblur", function (evt) {
 			evt.preventDefault();
 			searchpopup.classList.remove("search-popup");
 		});
