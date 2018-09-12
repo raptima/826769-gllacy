@@ -166,24 +166,15 @@ a:focus {
 }
 
 .hitsvg {
-	position:relative;
-	bottom: 275px;
+	margin-top: -270px;
 }
 
-.hits-item p {
-	position:relative;
-	bottom: 145px;
+.hits-list p {
+	margin-top:145px;
 }
 
 .hits-item a {
-	position:relative;
-	bottom: 145px;
 	text-align:center;
-}
-
-.hits-item .buttonorange {
-	position:relative;
-	bottom: 145px;
 }
 
 .price {
@@ -229,7 +220,6 @@ a:focus {
 .blog a {
 	font-size: 24px;
 	line-height: 30px;
-	width: 310px;
 }
 
 .subscribe {
@@ -489,6 +479,10 @@ ul.breadcrumbs li {
 	background-image: url("../img/icon-down-dir.svg");
 	background-position: right center;
 	background-repeat: no-repeat;
+}
+
+.catalog-list p {
+	margin-top:-65px;
 }
 
 
