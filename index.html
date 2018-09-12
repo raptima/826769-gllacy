@@ -43,7 +43,7 @@
 		</div>
 	</header>
 	
-	<main class="container">
+	<main class="container margin-top">
 		<h1 class="visually-hidden">Магазин мороженого «Глейси»</h1>
 		<section class="specialoffer">
 			<h2 class="visually-hidden">Спец-предложения</h2>
@@ -61,9 +61,11 @@
 				<p>Крем-брюле и пломбир с малиновым джемом</p>
 				<button type="button" class="buttonorange">Давайте оба!</button>
 			</div>-->
-			<button type="button" class="gallery-button"><img class="gallery-button-img" src="img/gallery-button.png"></button>
-			<button type="button" class="gallery-button"><img class="gallery-button-img" src="img/gallery-button.png"></button>
-			<button type="button" class="gallery-button"><img class="gallery-button-img" src="img/gallery-button.png"></button>
+			<div class="gallery">
+				<button type="button" class="gallery-button"><img class="gallery-button-img" src="img/gallery-button.png"></button>
+				<button type="button" class="gallery-button"><img class="gallery-button-img" src="img/gallery-button.png"></button>
+				<button type="button" class="gallery-button"><img class="gallery-button-img" src="img/gallery-button.png"></button>
+			</div>
 		</section>	
 		
 		<section class="bonuses">
@@ -87,7 +89,7 @@
 					<div class="hits-item-image">
 						<img class="hit" src="img/1.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
 					</div>
-					<img src="img/hit.svg" width="61" height="61" alt="Хит">
+					<img class="hitsvg" src="img/hit.svg" width="61" height="61" alt="Хит">
 					<p><span class="price">310</span> <img src="img/ruble.svg" width="31" height="36" alt="РР"><span class="mass">/кг<span></p>
 					<a href="#" class="description">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
 					<button type="button" class="buttonorange">Быстрый просмотр</button>
@@ -96,7 +98,7 @@
 					<div class="hits-item-image">
 						<img class="hit" src="img/2.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
 					</div>
-					<img src="img/hit.svg" width="61" height="61" alt="Хит">
+					<img class="hitsvg" src="img/hit.svg" width="61" height="61" alt="Хит">
 					<p><span class="price">380</span> <img src="img/ruble.svg" width="31" height="36" alt="РР"><span class="mass">/кг<span></p>
 					<a href="#" class="description">Сливочно-кофейное с кусочками шоколада</a>
 					<button type="button" class="buttonorange">Быстрый просмотр</button>
@@ -105,7 +107,7 @@
 					<div class="hits-item-image">
 						<img class="hit" src="img/3.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
 					</div>
-					<img src="img/hit.svg" width="61" height="61" alt="Хит">
+					<img class="hitsvg" src="img/hit.svg" width="61" height="61" alt="Хит">
 					<p><span class="price">355</span> <img src="img/ruble.svg" width="31" height="36" alt="РР"><span class="mass">/кг<span></p>
 					<a href="#" class="description">Сливочно-клубничное с присыпкой из белого шоколада</a>
 					<button type="button" class="buttonorange">Быстрый просмотр</button>
@@ -114,7 +116,7 @@
 					<div class="hits-item-image">
 						<img class="hit" src="img/4.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
 					</div>
-					<img src="img/hit.svg" width="61" height="61" alt="Хит">
+					<img class="hitsvg" src="img/hit.svg" width="61" height="61" alt="Хит">
 					<p><span class="price">415</span> <img src="img/ruble.svg" width="31" height="36" alt="РР"><span class="mass">/кг<span></p>
 					<a href="#" class="description">Сливочное крем-брюле с карамельной подливкой</a>
 					<button type="button" class="buttonorange">Быстрый просмотр</button>
@@ -165,7 +167,7 @@
 			</div>
 		</section>
 	</main>
-	<footer class="footer">
+	<footer class="footer container">
 		<div class="footer-social">
 			<ul class="footer-social-list">
 				<li><a class="social-button-twitter" href="#"><svg class="twitter-img" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><path  d="M16 0C7.164 0 0 7.164 0 16c0 8.837 7.164 16 16 16 8.837 0 16-7.163 16-16 0-8.836-7.163-16-16-16zm7.944 12.809c-.251 6.516-3.463 10.832-10.992 10.702h-.486c-.447 0-4.543-.443-5.344-1.823 2.479.19 4.247-.406 5.12-1.136-1.048-.289-2.923-.461-3.251-2.848.384.104.618.221 1.299.113-1.307-.824-2.758-1.519-2.679-3.643.311.317 1.164.518 1.46.457-.768-.233-2.149-3.244-.974-4.781 1.984 1.79 4.075 3.482 7.804 3.643.227-2.214 1.24-3.699 3.168-4.325 1.84-.479 3.255.26 3.901 1.138.737-.224 1.453-.466 2.193-.685-.004.833-.569 1.463-.935 1.709.747.165 1.423-.475 1.423-.475-.184.963-1.094 1.725-1.707 1.954z"/></svg></a></li>
@@ -188,7 +190,7 @@
 		</div>
 		<div class="footer-copyright">
 			<img src="img/logo-htmlacademy.svg" width="100" height="50" alt="Логотоп «html academy»">
-			Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> 2017
+			<p>Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> 2017</p>
 		</div>
     </footer> 
 	

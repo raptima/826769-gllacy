@@ -16,7 +16,6 @@ svg path {
 	fill:inherit;
 }
 
-
 a {
 	text-decoration: underline;
 	color: #ffffff;
@@ -58,6 +57,7 @@ a:focus {
 .breadcrumbs,
 .pagination-list {
 	list-style:none;
+	padding: 0;
 }
 
 .site-navigation a,
@@ -154,12 +154,36 @@ a:focus {
 }
 
 .hits-item {
-	width: 290px;
+	display: flex;
+	flex-direction: column;
+	width: 270px;
+	padding: 15px;
 }
 
 .hits-item .description {
 	font-size: 16px;
 	line-height: 24px;
+}
+
+.hitsvg {
+	position:relative;
+	bottom: 275px;
+}
+
+.hits-item p {
+	position:relative;
+	bottom: 145px;
+}
+
+.hits-item a {
+	position:relative;
+	bottom: 145px;
+	text-align:center;
+}
+
+.hits-item .buttonorange {
+	position:relative;
+	bottom: 145px;
 }
 
 .price {
@@ -205,6 +229,7 @@ a:focus {
 .blog a {
 	font-size: 24px;
 	line-height: 30px;
+	width: 310px;
 }
 
 .subscribe {
@@ -402,7 +427,6 @@ a:focus {
 /*Текстовые данные, фоны*/	
 	/*Всплывающие элементы*/
 		/*Интерактивность*/
-
 .search-popup input:hover {
 	border: solid 1px rgb(154,154,154);
 }
@@ -410,7 +434,6 @@ a:focus {
 .search-popup input:focus {
 	border: solid 1px rgb(46,136,228);
 }
-
 		
 /*Текстовые данные, фоны*/
 	/*INNER.HTML*/
@@ -678,7 +701,13 @@ ul.breadcrumbs li {
 .container {
 	width: 100%;
 	max-width: 1200px;
-	padding: 10px 27px 26px 27px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+.bonuses,
+.location{
+	margin-top: 60px;
 }
 
 .header-top {
@@ -734,17 +763,18 @@ ul.breadcrumbs li {
 }
 
 .gallery-content1 {
-	margin-top:-195px;
+	margin-top:-150px;
 	display:flex;
 	flex-direction:column;
 	justify-content:flex-end;
 	background:url("../img/Ice-Cream_light.png");
-	background-position:cover;
 	background-repeat:no-repeat;
 	height: 880px;
+	background-position: 80px;
 }
 
 .gallery-content1  p{
+	width: 700px;
 	text-align:center;
 	margin-left: auto;
 	margin-right: auto;
@@ -763,6 +793,9 @@ ul.breadcrumbs li {
 .bonuses {
 	display:flex;
 	justify-content:space-between;
+}
+.gallery {
+	margin-top: -320px;
 }
 
 .jam {
@@ -829,12 +862,10 @@ ul.breadcrumbs li {
 
 .about-list-left {
 	display:flex;
-	
 }
 
 .about-list-right {
-	display:flex;
-	
+	display:flex;	
 }
 
 .blog_subscribe {
@@ -846,6 +877,7 @@ ul.breadcrumbs li {
 .blog {
 	display:flex;
 	width: 560px;
+	flex-direction:column;
 }
 
 .subscribe {
@@ -877,6 +909,7 @@ ul.breadcrumbs li {
 .footer-about {
 	display:flex;
 	flex-direction:column;
+	justify-content: space-around;
 }
 
 .footer-about-list {
@@ -888,8 +921,7 @@ ul.breadcrumbs li {
 .footer-copyright {
 	display:flex;
 	flex-direction:column;
-	width: 300px;
-	margin:auto;
+	margin-left:auto;
 }
 
 .filters-top {
