@@ -131,7 +131,7 @@ a:focus {
 	line-height: 60px;
 }	
 
-.gallery-content .buttonorange {
+.gallery-content .button-orange {
 	font-size: 32px;
 	line-height: 44px;
 }
@@ -169,13 +169,13 @@ a:focus {
 	margin:0;
 }
 
-.buttonorange {
+.button-orange {
 	font-size: 18px;
 	line-height: 24px;
 	vertical-align:middle;
 }
 
-.buttonorangeh {
+.button-orange-h {
 	font-size: 18px;
 	line-height: 24px;
 	vertical-align:middle;
@@ -444,7 +444,7 @@ a:focus {
 	color: #343434;
 }
 
-.login-link-popup-none .buttonorange {
+.login-link-popup-none .button-orange {
 	width: 100px;
 }
 
@@ -602,8 +602,8 @@ ul.breadcrumbs li {
 	box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
 }
 
-.hits-item:hover .buttonorangeh,
-.hits-item:focus  .buttonorangeh {
+.hits-item:hover .button-orange-h,
+.hits-item:focus  .button-orange-h {
 	display:block;
 	box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
 	border:none;
@@ -620,7 +620,7 @@ ul.breadcrumbs li {
 
 /*Интерактивность*/
 	/*Оранжевая кнопка*/
-.buttonorange {
+.button-orange {
 	box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
 	border:none;
 	background: linear-gradient(to top, #ea4b38, #f26843);
@@ -629,44 +629,44 @@ ul.breadcrumbs li {
 	border-radius: 30px;
 }
 
-.buttonorange:hover,
-.buttonorange:focus {
+.button-orange:hover,
+.button-orange:focus {
 	box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 10.64);
 	border:none;
 	background: linear-gradient(to top, #ea6f5f, #f58668);
 	color:#FFFFFF;
 }
 
-.buttonorange:active {
+.button-orange:active {
 	box-shadow: 0px -2px 0px 0px rgba(172, 16, 0, 10.64);
 	border:none;
 	background: linear-gradient(to top, #e16241, #d74631);
 	color:#FFFFFF;
 }
 
-.buttonorangeh {
+.button-orange-h {
 	display:none;
 }
 
-.hits-item:hover .buttonorangeh:hover,
-.hits-item:hover .buttonorangeh:focus,
-.hits-item:focus .buttonorangeh:hover,
-.hits-item:focus .buttonorangeh:focus {
+.hits-item:hover .button-orange-h:hover,
+.hits-item:hover .button-orange-h:focus,
+.hits-item:focus .button-orange-h:hover,
+.hits-item:focus .button-orange-h:focus {
 	box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 10.64);
 	border:none;
 	background: linear-gradient(to top, #ea6f5f, #f58668);
 	color:#FFFFFF;
 }
 
-.hits-item:hover .buttonorangeh:active,
-.hits-item:focus .buttonorangeh:active {
+.hits-item:hover .button-orange-h:active,
+.hits-item:focus .button-orange-h:active {
 	box-shadow: 0px -2px 0px 0px rgba(172, 16, 0, 10.64);
 	border:none;
 	background: linear-gradient(to top, #e16241, #d74631);
 	color:#FFFFFF;
 }
 
-.description:focus + .buttonorangeh {
+.description:focus + .button-orange-h {
 	display: block;
 	box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
 	border:none;
@@ -676,8 +676,8 @@ ul.breadcrumbs li {
 	border-radius: 30px;
 }
 
-.buttonorangeh:hover,
-.buttonorangeh:focus {
+.button-orange-h:hover,
+.button-orange-h:focus {
 	display: block;
 	box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 10.64);
 	border:none;
@@ -934,7 +934,7 @@ ul.breadcrumbs li {
     margin-top: 390px;
 }
 
-.gallery-content1  .buttonorange{
+.gallery-content1  .button-orange{
 	text-align:center;
 	margin-left: auto;
 	margin-right: auto;	
@@ -970,7 +970,7 @@ ul.breadcrumbs li {
 	margin-top: 28px;
 }
 
-.jam .buttonorange {
+.jam .button-orange {
 	display:flex;
 	align-self:flex-end;
 	margin-top: auto;
@@ -991,7 +991,7 @@ ul.breadcrumbs li {
 	margin-top: 28px;
 }
 
-.choko .buttonorange {
+.choko .button-orange {
 	display:flex;
 	align-self:flex-end;
 	margin-top: auto;
