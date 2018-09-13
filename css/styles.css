@@ -95,12 +95,28 @@ a:focus {
 	font-family: roboto medium;
 }
 	
+.entrance {
+	margin-right: 9px;
+    margin-top: -1px;
+}
+
+.bassket {
+	margin-right: 8px;
+}
+	
+.info {
+	display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 0;
+}
+	
 .info .time {
 	font-size: 14px;
 	line-height: 16px;
 }
 
-.info .time {
+.info .phone {
 	font-size: 22px;
 	line-height: 24px;
 }
@@ -120,7 +136,7 @@ a:focus {
 	background-size: cover;
 	background-repeat: no-repeat;
 	border-radius: 25px;
-	padding: 24px 29px 23px 20px;
+	padding: 24px 20px 23px 20px;
 }
 
 .choko {
@@ -128,7 +144,7 @@ a:focus {
 	background-size: cover;
 	background-repeat: no-repeat;
 	border-radius: 25px;
-	padding: 24px 29px 23px 20px;
+	padding: 24px 20px 23px 20px;
 }
 
 .jam h3,
@@ -207,25 +223,35 @@ a:focus {
 	background-repeat: no-repeat;
 	background-size: cover;
 	padding: 30px 35px 30px 20px;
+	height:246px;
+	margin-top: -30px;
+	margin-bottom: 40px;
 }
 
 
 .about h5 {
 	font-size: 24px;
 	line-height: 30px;
+	margin:0;
 }
 
 .about-item {
 	display: flex;
-	align-items:baseline;
 	width: 600px;
 	font-size: 16px;
 	line-height: 22px;
 	font-family:Roboto regular;
+	font-weight: 500;
 }
 
+.about-item  p{
+	padding-left: 10px;
+	margin-bottom: -5px;
+}
+
+
 .blog {
-	height: 220px;
+	height: 193px;
 	background:url("../img/strbwback.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -239,21 +265,30 @@ a:focus {
 }
 
 .subscribe {
-	border: 5px solid;
-	border-radius: 25px;
-	height: 220px;
-	background: #f8f7f4;
+	background-image: url("../img/bg-post.svg");
 	background-size: cover;
-	background-repeat: no-repeat;
-	border-image: url("../img/bg-post.svg") 5 round;
-	font-size: 16px;
-	line-height: 22px;
-	padding:10px;
+}
+
+.sub-low {
+	display: flex;
+	margin-top:35px;
+}
+.sub-low input {
+	width: 368px;
+	height: 44px;
+}
+
+.sub-low button {
+	margin-left:auto;
 }
 
 .emaiL {
-	font-size: 16px;
-	line-height: 24px;
+	background-color:#f8f7f4;
+    font-size: 16px;
+    line-height: 24px;
+    border-radius: 20px;
+    /* margin-top: -1px; */
+    padding: 0px 17px 26px 21px;
 }
 
 .location {
@@ -313,7 +348,8 @@ a:focus {
 .search-popup-none {
 	position:fixed;
 	top: 60px;
-	left: 603px;
+	left: 48%;
+	transform: translateX (-48%);
 	display:none;
 	justify-content: center;
 	align-items: center;
@@ -355,7 +391,8 @@ a:focus {
 	display:none;
 	position:fixed;
 	top: 60px;
-	left: 603px;
+	left: 60%;
+	translateX:(-60%);
 	flex-direction: column;
 	flex-wrap: nowrap;
 	width:277px;
@@ -404,29 +441,29 @@ a:focus {
 	
 .catalog-popup-none {
 	display: none;
-	font-family:Roboto regular;
-	font-size: 14px;
-	line-height: 16px;
-	box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
-	width: 120px;
+    font-family: Roboto regular;
+    font-size: 14px;
+    line-height: 16px;
+    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 55px;
+    font-weight: 500;
+    left: 23%;
+    transform: translateX(-23%);
 }
 
 .catalog-popup {
-	display:block
+	display:flex;
 }
 
 .catalog-popup-list {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	background-color: #f8f7f4;
+	margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #f8f7f4;
     border-radius: 6px;
     padding: 10px;
-	height: 120px;
-	position: absolute;
-    top: 35px;
-    left: 260px;
-	box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
 }
 
 .catalog-popup-item a {
@@ -552,6 +589,20 @@ ul.breadcrumbs li {
 	box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
 }
 
+.hits-item:hover .buttonorangeh,
+.hits-item:focus  .buttonorangeh {
+	display:flex;
+	width:30px;
+	height:30px;
+	margin:0;
+	box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+	border:none;
+	background: linear-gradient(to top, #ea4b38, #f26843);
+	color:#FFFFFF;	
+	padding:12px;
+	border-radius: 30px;
+}
+
 .blog a:hover,
 .blog a:focus {
 	color: #dc532f;
@@ -584,12 +635,11 @@ ul.breadcrumbs li {
 }
 
 .buttonorangeh {
-	box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
-	border:none;
-	background: linear-gradient(to top, #ea4b38, #f26843);
-	color:#FFFFFF;	
-	padding:12px;
-	border-radius: 30px;
+	position: absolute;
+	clip: rect(0 0 0 0);
+	width: 1px;
+	height: 1px;
+	margin: -1px;
 }
 
 .buttonorangeh:hover,
@@ -616,8 +666,7 @@ ul.breadcrumbs li {
 	border:none;
 	background:#a3b4aa;
 	color:#ffffff;
-	display:flex;
-	align-items:center;
+
 	padding: 0 20px;
 	margin-right:10px
 }
@@ -700,7 +749,6 @@ ul.breadcrumbs li {
 }
 
 .gallery-button-img {
-	background-color:#ffffff;
 	border-radius:10px;
 }
 
@@ -774,11 +822,6 @@ ul.breadcrumbs li {
 	padding-top:9px;
 }
 
-.bonuses,
-.location {
-	margin-top: 60px;
-}
-
 .header-top {
   display: flex;
   align-items: center;
@@ -832,23 +875,26 @@ ul.breadcrumbs li {
 }
 
 .gallery-content1 {
-	margin-top:-592px;
+	margin-top:-600px;
 	display:flex;
 	flex-direction:column;
 	justify-content:flex-end;
 	background:url("../img/Ice-Cream_light.png");
 	background-repeat:no-repeat;
 	height: 880px;
-	background-position: 80px;
+	background-position: 50px;
 }
 
 .gallery-content1  p{
 	width: 700px;
-	text-align:center;
-	margin-left: auto;
-	margin-right: auto;
-	font-size: 60px;
-	line-height: 60px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 0px;
+    margin: auto;
+    margin-top: 390px;
 }
 
 .gallery-content1  .buttonorange{
@@ -865,11 +911,11 @@ ul.breadcrumbs li {
 .bonuses {
 	display:flex;
 	justify-content:space-between;
-	margin-top: -240px;
+	margin-top: -235px;
 	height: 230px;
 }
 .gallery {
-	margin-top: 415px;
+	margin-top: 450px;
 }
 
 .jam {
@@ -949,18 +995,27 @@ ul.breadcrumbs li {
 
 .blog {
 	display:flex;
-	width: 560px;
+	width: 533px;
 	flex-direction:column;
 }
 
+.blog p {
+	margin:0;
+}
+
+.blog a{
+	width: 300px;
+}
+
 .subscribe {
-	display:flex;
-	width: 560px;
+	display: flex;
+    width: 550px;
+    padding: 5px;
 }
 
 .location {
 	display:flex;
-	margin-top:10px;
+	margin-top:40px;
 	flex-direction:row-reverse;
 }
 
