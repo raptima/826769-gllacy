@@ -858,6 +858,9 @@ ul.breadcrumbs li {
 	font-size: 32px;
 	line-height: 44px;
 	margin-bottom: 270px;
+	padding: 0 40px;
+	height: 63px;
+	text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
 }
 .bonuses {
 	display:flex;
