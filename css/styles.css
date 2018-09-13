@@ -120,7 +120,7 @@ a:focus {
 	background-size: cover;
 	background-repeat: no-repeat;
 	border-radius: 25px;
-	padding: 22px 30px 25px 20px;
+	padding: 24px 29px 23px 20px;
 }
 
 .choko {
@@ -128,19 +128,24 @@ a:focus {
 	background-size: cover;
 	background-repeat: no-repeat;
 	border-radius: 25px;
-	padding: 22px 30px 25px 20px;
+	padding: 24px 29px 23px 20px;
 }
 
 .jam h3,
 .choko h3 {
-	font-size: 32px;
-	line-height: 44px;
+	font-size: 35px;
+	line-height: 41px;
+	font-family: roboto bold;
+	text-align: justify;
+	margin:0;
 }
 
 .jam p,
 .choko p {
 	font-size: 18px;
 	line-height: 22px;
+	font-family: roboto bold;
+	margin:0;
 }
 
 .buttonorange {
@@ -760,13 +765,17 @@ ul.breadcrumbs li {
 /*СЕТКИ*/
 .container {
 	width: 100%;
-	max-width: 1200px;
-	padding: 0 15px;
+	max-width: 1146px;
+	padding: 0 27px;
 	margin: 0 auto;
 }
 
+.header {
+	padding-top:9px;
+}
+
 .bonuses,
-.location{
+.location {
 	margin-top: 60px;
 }
 
@@ -854,6 +863,7 @@ ul.breadcrumbs li {
 	display:flex;
 	justify-content:space-between;
 	margin-top: -240px;
+	height: 230px;
 }
 .gallery {
 	margin-top: 415px;
@@ -862,43 +872,43 @@ ul.breadcrumbs li {
 .jam {
 	display:flex;
 	flex-direction:column;
-	width:535px;
+	width:510px;
 }
 
 .jam h3 {
 	display:flex;
-	margin-top: 5px;
 }
 
 .jam p {
 	display:flex;
-	margin-top: 1px;
+	margin-top: 28px;
 }
 
 .jam .buttonorange {
 	display:flex;
 	align-self:flex-end;
+	margin-top: auto;
 }
 
 .choko {
 	display:flex;
 	flex-direction:column;
-	width:535px;
+	width:510px;
 }
 
 .choko h3 {
 	display:flex;
-	margin-top: 5px;
 }
 
 .choko p {
 	display:flex;
-	margin-top: 1px;
+	margin-top: 28px;
 }
 
 .choko .buttonorange {
 	display:flex;
 	align-self:flex-end;
+	margin-top: auto;
 }
 
 .hits {
