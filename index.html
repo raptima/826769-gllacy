@@ -51,24 +51,22 @@
 		<section class="specialoffer">
 			<h2 class="visually-hidden">Спец-предложения</h2>
 			<div class="gallery">
-				<button type="button" class="gallery-button"><img class="gallery-button-img" src="img/gallery-button.png"></button>
-				<button type="button" class="gallery-button"><img class="gallery-button-img" src="img/gallery-button.png"></button>
-				<button type="button" class="gallery-button"><img class="gallery-button-img" src="img/gallery-button.png"></button>
+				<button type="button" class="gallery-button-1"><img class="gallery-button-img gallery-button-img-active" src="img/gallery-button.png"></button>
+				<button type="button" class="gallery-button-2"><img class="gallery-button-img" src="img/gallery-button.png"></button>
+				<button type="button" class="gallery-button-3"><img class="gallery-button-img" src="img/gallery-button.png"></button>
 			</div>
-			<div class="gallery-content1">
+			<div class="gallery-content1 gallery-content-display">
 				<p>Крем-брюле и пломбир с малиновым джемом</p>
 				<button type="button" class="button-orange">Давайте оба!</button>
 			</div>
-			<!--<div class="gallery-content2">
-				<a href="#"><img src="img/Ice-Cream_light_b2.png" alt="Предложение 2"></a>
-				<p>Крем-брюле и пломбир с малиновым джемом</p>
+			<div class="gallery-content2">
+				<p>Шоколадный пломбир и лимонный сорбет</p>
 				<button type="button" class="button-orange">Давайте оба!</button>
 			</div>
 			<div class="gallery-content3">
-				<a href="#"><img src="img/Ice-Cream_light_b3.png" alt="Предложение 3"></a>
-				<p>Крем-брюле и пломбир с малиновым джемом</p>
+				<p>Пломбир с помадкой и клубничный щербет</p>
 				<button type="button" class="button-orange">Давайте оба!</button>
-			</div>-->
+			</div>
 		</section>	
 		
 		<section class="bonuses">
@@ -270,6 +268,86 @@
 		var formpopup = document.querySelector(".link-popup-none");
 		var formpopuptext = document.querySelector(".link-popup-none input");
 		var formpopupclose = formpopup.querySelector(".popup-close")
+		
+		var gallety1 = document.querySelector(".gallery-content1");
+		var gallety2 = document.querySelector(".gallery-content2");
+		var gallety3 = document.querySelector(".gallery-content3");
+		var gallerybutton1 = document.querySelector(".gallery-button-1");
+		var gallerybutton2 = document.querySelector(".gallery-button-2");
+		var gallerybutton3 = document.querySelector(".gallery-button-3");
+		var gallerybutton1img = document.querySelector(".gallery-button-1 img");
+		var gallerybutton2img = document.querySelector(".gallery-button-2 img");
+		var gallerybutton3img = document.querySelector(".gallery-button-3 img");
+		var bodybackground = document.querySelector("body");
+		var bonusesdelta = document.querySelector(".bonuses");
+			
+		gallerybutton1.addEventListener("click", function(evt) {
+			evt.preventDefault();
+			gallety1.classList.add("gallery-content-display");
+			gallety2.classList.remove("gallery-content-display");
+			gallety3.classList.remove("gallery-content-display");
+			gallerybutton1img.classList.add("gallery-button-img-active");
+			gallerybutton2img.classList.remove("gallery-button-img-active");
+			gallerybutton3img.classList.remove("gallery-button-img-active");
+			bodybackground.classList.add("global_background1");
+			bodybackground.classList.remove("global_background2");
+			bodybackground.classList.remove("global_background3");
+			bonusesdelta.classList.add("bonuses-1");
+			bonusesdelta.classList.remove("bonuses-2");
+			bonusesdelta.classList.remove("bonuses-3");
+		});
+		
+		gallerybutton2.addEventListener("click", function(evt) {
+			evt.preventDefault();
+			gallety1.classList.remove("gallery-content-display");
+			gallety2.classList.add("gallery-content-display");
+			gallety3.classList.remove("gallery-content-display");
+			gallerybutton1img.classList.remove("gallery-button-img-active");
+			gallerybutton2img.classList.add("gallery-button-img-active");
+			gallerybutton3img.classList.remove("gallery-button-img-active");
+			bodybackground.classList.remove("global_background1");
+			bodybackground.classList.add("global_background2");
+			bodybackground.classList.remove("global_background3");
+			bonusesdelta.classList.remove("bonuses-1");
+			bonusesdelta.classList.add("bonuses-2");
+			bonusesdelta.classList.remove("bonuses-3");
+		});
+		
+		gallerybutton3.addEventListener("click", function(evt) {
+			evt.preventDefault();
+			gallety1.classList.remove("gallery-content-display");
+			gallety2.classList.remove("gallery-content-display");
+			gallety3.classList.add("gallery-content-display");
+			gallerybutton1img.classList.remove("gallery-button-img-active");
+			gallerybutton2img.classList.remove("gallery-button-img-active");
+			gallerybutton3img.classList.add("gallery-button-img-active");
+			bodybackground.classList.remove("global_background1");
+			bodybackground.classList.remove("global_background2");
+			bodybackground.classList.add("global_background3");
+			bonusesdelta.classList.remove("bonuses-1");
+			bonusesdelta.classList.remove("bonuses-2");
+			bonusesdelta.classList.add("bonuses-3");
+		});
+		
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		
 			
 		form.addEventListener("click", function(evt) {

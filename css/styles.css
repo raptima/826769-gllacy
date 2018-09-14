@@ -10,6 +10,18 @@ body {
 	background: linear-gradient(to top, #859d8f, #9cb0a5);
 }
 
+.global_background1 {
+	background: linear-gradient(to top, #859d8f, #9cb0a5);
+}
+
+.global_background2 {
+	background: linear-gradient(to top, #9d8b84, #b9a69e);
+}
+
+.global_background3 {
+	background: linear-gradient(to top, #8996a6, #a3b2c3);
+}
+
 svg path {
 	stroke:inherit;
 	stroke-width:inherit;
@@ -643,7 +655,6 @@ ul.breadcrumbs li {
 }
 
 
-
 /*Интерактивность*/	
 .site-navigation a:hover,
 .site-navigation a:focus {
@@ -657,7 +668,8 @@ ul.breadcrumbs li {
 
 .hits-item:hover,
 .hits-item:focus {
-	background-color: #9bafa3;
+	/*background-color: #9bafa3;*/
+	background: rgba (255,0,0,0.5);
 	border-radius:5px;	
 	box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
 }
@@ -834,7 +846,9 @@ ul.breadcrumbs li {
 
 /*Интерактивность*/
 	/*/*Кнопки галереи*/
-.gallery-button {
+.gallery-button-1,
+.gallery-button-2,
+.gallery-button-3 {
 	border:none;
 	background-color: rgba(0, 0, 0, 0);
 	color:#ffffff;
@@ -844,14 +858,28 @@ ul.breadcrumbs li {
 	border-radius:10px;
 }
 
-.gallery-button:hover .gallery-button-img,
-.gallery-button:focus .gallery-button-img {
+.gallery-button-1:hover .gallery-button-img,
+.gallery-button-1:focus .gallery-button-img,
+.gallery-button-2:hover .gallery-button-img,
+.gallery-button-2:focus .gallery-button-img,
+.gallery-button-3:hover .gallery-button-img,
+.gallery-button-3:focus .gallery-button-img {
 	background-color: rgb(178,194,183);
 }
 
-.gallery-button:active .gallery-button-img {
+
+.gallery-button-1:active .gallery-button-img,
+.gallery-button-2:active .gallery-button-img,
+.gallery-button-3:active .gallery-button-img {
 	background-color: #ffffff;
 }
+
+
+.gallery-button-img-active {
+	border-radius:10px;
+	background-color: #ffffff;
+}
+
 
 /*Интерактивность*/
 	/*Кнопки социальных сетей*/
@@ -973,7 +1001,7 @@ ul.breadcrumbs li {
 
 .gallery-content1 {
 	margin-top:-600px;
-	display:flex;
+	display:none;
 	flex-direction:column;
 	justify-content:flex-end;
 	background:url("../img/Ice-Cream_light.png");
@@ -1005,12 +1033,100 @@ ul.breadcrumbs li {
 	height: 63px;
 	text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
 }
+
+.gallery-content2 {
+	margin-top:-605px;
+	display:none;
+	flex-direction:column;
+	justify-content:flex-end;
+	background:url("../img/Ice-Cream_light_b2.png");
+	background-repeat:no-repeat;
+	height: 880px;
+	background-position: 50px;
+}
+
+.gallery-content2  p{
+	width: 700px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 0px;
+    margin: auto;
+    margin-top: 390px;
+}
+
+.gallery-content2  .button-orange{
+	text-align:center;
+	margin-left: auto;
+	margin-right: auto;	
+	font-size: 32px;
+	line-height: 44px;
+	margin-bottom: 270px;
+	padding: 0 40px;
+	height: 63px;
+	text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
+}
+
+.gallery-content3 {
+	margin-top:-608px;
+	display:none;
+	flex-direction:column;
+	justify-content:flex-end;
+	background:url("../img/Ice-Cream_light_b3.png");
+	background-repeat:no-repeat;
+	height: 880px;
+	background-position: 50px;
+}
+
+.gallery-content3  p{
+	width: 700px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 0px;
+    margin: auto;
+    margin-top: 390px;
+}
+
+.gallery-content3  .button-orange{
+	text-align:center;
+	margin-left: auto;
+	margin-right: auto;	
+	font-size: 32px;
+	line-height: 44px;
+	margin-bottom: 270px;
+	padding: 0 40px;
+	height: 63px;
+	text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
+}
+
+.gallery-content-display {
+	display: flex;
+}
+
 .bonuses {
 	display:flex;
 	justify-content:space-between;
 	margin-top: -235px;
 	height: 230px;
 }
+
+.bonuses-1 {
+	margin-top: -235px;
+}
+
+.bonuses-2 {
+	margin-top: -230px;
+}
+
+.bonuses-3 {
+	margin-top: -227px;
+}
+
 .gallery {
 	margin-top: 450px;
 }
