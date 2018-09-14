@@ -188,11 +188,18 @@ a:focus {
 .hits-item {
 	display: flex;
 	flex-direction: column;
-	width: 270px;
+	width: 267px;
 	height: 380px;
-	padding-left: 8px;
-    padding-right: 8px;
 }
+
+.hits-item:not(:first-child){
+	padding-left: 13px;
+}
+
+.hits-item:not(:last-child){
+	padding-right: 13px;
+}
+
 
 .hits-item .description {
 	font-size: 16px;
@@ -1011,7 +1018,7 @@ ul.breadcrumbs li {
 .jam {
 	display:flex;
 	flex-direction:column;
-	width:510px;
+	width:520px;
 }
 
 .jam h3 {
@@ -1032,7 +1039,7 @@ ul.breadcrumbs li {
 .choko {
 	display:flex;
 	flex-direction:column;
-	width:510px;
+	width:520px;
 }
 
 .choko h3 {

@@ -268,12 +268,14 @@
 		
 		var form = document.querySelector(".contactinfo .button-orange");
 		var formpopup = document.querySelector(".link-popup-none");
+		var formpopuptext = document.querySelector(".link-popup-none input");
 		var formpopupclose = formpopup.querySelector(".popup-close")
 		
 			
 		form.addEventListener("click", function(evt) {
 			evt.preventDefault();
 			formpopup.classList.add("link-popup");
+			formpopuptext.focus();
 		});
 		formpopupclose.addEventListener("click", function (evt) {
 			evt.preventDefault();
