@@ -489,21 +489,23 @@ a:focus {
 	bottom: 320px;
 	left: 50%;
 	transform: translateX(-50%);
-	border-radius: 6px;
-	width: 450px;
+	border-radius: 10px;
+	width: 427px;
+	height: 398px;
 	flex-direction: column;
 	font-size: 16px;
 	line-height: 24px;
 	background-color: #f8f7f4;
-	padding: 20px 0 16px 25px;
+    padding: 20px 25px 25px 25px;
 	box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+	
 }
 
 .link-popup-none input,
 .link-popup-none textarea{
 	padding-left: 15px;
-	height: 44px;
-	width: 240px;
+	height: 40px;
+	width: 252px;
 	color: #323232;
 	font-size: 16px;
 	line-height: 24px;
@@ -511,6 +513,30 @@ a:focus {
 	font-weight: bold;
     border: solid 1px #bbbbbb;
 	border-radius: 5px;
+	margin-bottom: 5px;
+}
+
+.link-popup-none textarea{
+	padding-top: 10px;
+    height: 139px;
+    margin: 0;
+    width: 404px;
+	resize: none;
+}
+
+.link-popup-form .button-orange {
+	display: flex;
+    margin-left: auto;
+    width: 139px;
+	justify-content: center;
+}
+
+.popup-close {
+	position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+    background-color: snow;
 }
 
 .link-popup-title {
