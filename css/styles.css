@@ -854,10 +854,6 @@ ul.breadcrumbs li {
 
 
 
-
-
-
-
 .catalog-list p {
 	margin-top:-65px;
 }
@@ -1192,13 +1188,27 @@ ul.breadcrumbs li {
 }
 
 .confirmation {
-	border:none;
 	background-color:#aabcb2;
 	border-radius: 25px;
 	display: flex;
     align-self: flex-end;
-	padding: 10px 30px;
+	padding: 7px 30px;
 	width: 143px;
+	font-weight: 500;
+    background-color: #a9bab0;
+    border: 2px solid #fff;
+	height: 36px;
+}
+
+.confirmation:hover,
+.confirmation:focus {
+	background-color:#ffffff;
+	color: #323232;
+}
+
+.confirmation:active {
+	background-color:#eeeeee;
+	color: #323232;
 }
  
 /*СЕТКИ*/
