@@ -703,6 +703,38 @@ ul.breadcrumbs li {
 	background-position-x: 165px;
 }
 
+
+.bar {
+	position: absolute;
+	top: 289px;
+	width:150px;;
+	height: 2px;
+	background: #ffffff;
+}
+
+.scale {
+	height: 2px;
+	background: rgba(255, 255, 255, 0.3);
+}
+
+
+.range-toggle {
+	width: 4px;
+	height: 4px;
+	border: 8px solid #ffffff;
+	border-radius: 50%;
+	box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+	cursor: pointer;
+}
+
+.range-toggle-min {
+	left: 100px;
+}
+
+.range-toggle-max {
+	left: 200px;
+}
+
 .catalog-list p {
 	margin-top:-65px;
 }
@@ -1463,8 +1495,7 @@ ul .footer-long {
 
 .catalog {
 	display:flex;
-	flex-direction:row;
-	flex-wrap:wrap;
+	flex-direction:column;
 }
 
 .catalog ul {
