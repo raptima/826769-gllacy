@@ -1113,7 +1113,7 @@ ul.breadcrumbs li {
 }
 
 .gallery-content2 {
-	margin-top:-605px;
+	margin-top:-608px;
 	display:none;
 	flex-direction:column;
 	justify-content:flex-end;
@@ -1132,7 +1132,7 @@ ul.breadcrumbs li {
     line-height: 60px;
     margin-bottom: 0px;
     margin: auto;
-    margin-top: 395px;
+    margin-top: 398px;
 }
 
 .gallery-content2  .button-orange{
@@ -1141,14 +1141,14 @@ ul.breadcrumbs li {
 	margin-right: auto;	
 	font-size: 32px;
 	line-height: 44px;
-	margin-bottom: 265px;
+	margin-bottom: 262px;
 	padding: 0 40px;
 	height: 63px;
 	text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
 }
 
 .gallery-content3 {
-	margin-top:-608px;
+	margin-top:-610px;
 	display:none;
 	flex-direction:column;
 	justify-content:flex-end;
@@ -1167,7 +1167,7 @@ ul.breadcrumbs li {
     line-height: 60px;
     margin-bottom: 0px;
     margin: auto;
-    margin-top: 398px;
+    margin-top: 400px;
 }
 
 .gallery-content3  .button-orange{
@@ -1176,7 +1176,7 @@ ul.breadcrumbs li {
 	margin-right: auto;	
 	font-size: 32px;
 	line-height: 44px;
-	margin-bottom: 262px;
+	margin-bottom: 260px;
 	padding: 0 40px;
 	height: 63px;
 	text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
@@ -1198,11 +1198,11 @@ ul.breadcrumbs li {
 }
 
 .bonuses-2 {
-	margin-top: -230px;
+	margin-top: -227px;
 }
 
 .bonuses-3 {
-	margin-top: -227px;
+	margin-top: -225px;
 }
 
 .gallery {
