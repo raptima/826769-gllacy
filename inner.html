@@ -71,13 +71,10 @@
 						<div class="filterfield">
 							<p>Цена: </p>
 							<div class="data price">
-								<div class="range-controls">
-									<div class="scale">
-										<div class="bar"></div>
-									</div>
-									<div class="range-toggle range-toggle-min"></div>
-									<div class="range-toggle range-toggle-max"></div>
-								</div>
+								<div class="track"></div>
+								<div class="track_low"></div>
+								<div class="handler handler_left"></div>
+								<div class="handler handler_right"></div>
 							</div>
 						</div>
 						
@@ -85,10 +82,14 @@
 						<div class="filterfield">
 							<p>Жирность: </p>
 							<span class="data fat">
-								<input type="radio" name="fat" value="0">0%</input>
-								<input type="radio" name="fat" checked>до 10%</input>
-								<input type="radio" name="fat">до 30%</input>
-								<input type="radio" name="fat">выше 30%</input>
+								<input id="fat-0" type="radio" name="fat" value="0">
+								<label for="fat-0">0%</label>
+								<input id="fat-10" type="radio" name="fat" checked>
+								<label for="fat-10">до 10%</label>
+								<input id="fat-30" type="radio" name="fat">
+								<label for="fat-30">до 30%</label>
+								<input id="fat-100"type="radio" name="fat">
+								<label for="fat-100">выше 30%</label>
 							</span>
 						</div>
 					</div>
@@ -96,11 +97,16 @@
 						<div class="filterfield ">
 							<p>Наполнители: </p>
 							<span class="data filler">
-								<input type="checkbox" name="filler1" value="filler1" checked>Шоколадные</input>
-								<input type="checkbox" name="filler1" value="filler1" checked>Сахарные присыпки</input>
-								<input type="checkbox" name="filler1" value="filler1">Фрукты</input>
-								<input type="checkbox" name="filler1" value="filler1">Сиропы</input>
-								<input type="checkbox" name="filler1" value="filler1">Джемы</input>
+								<input "choise-1" type="checkbox" name="filler1" value="choko" checked>
+								<label for="choise-1">Шоколадные</label>
+								<input "choise-2" type="checkbox" name="filler1" value="sugar" checked>
+								<label for="choise-2">Сахарные присыпки</label>
+								<input "choise-3" type="checkbox" name="filler1" value="fruit">
+								<label for="choise-3">Фрукты</label>
+								<input "choise-4" type="checkbox" name="filler1" value="syrope">
+								<label for="choise-4">Сиропы</label>
+								<input "choise-5" type="checkbox" name="filler1" value="jamm">
+								<label for="choise-5">Джемы</label>
 							</span>
 						</div>
 						<button class="confirmation" type="submit">Применить</button>
@@ -248,7 +254,9 @@
 			</ul>
 		</div>
 		<div class="footer-copyright">
-			<img src="img/logo-htmlacademy.svg" width="100" height="50" alt="Логотоп «html academy»">
+			<a href="https://htmlacademy.ru/">
+				<img src="img/logo-htmlacademy.svg" width="100" height="50" alt="Логотоп «html academy»">
+			</a>
 			<p>Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> © 2017</p>
 		</div>
     </footer> 
