@@ -241,14 +241,10 @@
 		</div>
 	</section>
 
-	
-	<!--
 	<section class="basket-popup-none">
 		<h2 class="visually-hidden">Корзина</h2>
 		<button class="button-orange" type="submit">Оформить заказ</button>
 	</section>
-	<br><br>
-	-->
 	
 	<section class="link-popup-none">
 		<h2 class="visually-hidden">Форма обратной связи</h2>
@@ -283,6 +279,10 @@
 		var formpopuptext = document.querySelector(".link-popup-none input");
 		var formpopupclose = formpopup.querySelector(".popup-close")
 		
+		var basket = document.querySelector(".basket");
+		var basketbutton = document.querySelector(".user-nav-button-basket");
+		var basketpopup = document.querySelector(".basket-popup-none");
+		
 		var gallety1 = document.querySelector(".gallery-content1");
 		var gallety2 = document.querySelector(".gallery-content2");
 		var gallety3 = document.querySelector(".gallery-content3");
@@ -294,6 +294,43 @@
 		var gallerybutton3img = document.querySelector(".gallery-button-3 img");
 		var bodybackground = document.querySelector("body");
 		var bonusesdelta = document.querySelector(".bonuses");
+		
+
+
+
+		basket.addEventListener("mouseenter", function (evt) {
+			evt.preventDefault();
+			basketpopup.classList.add("basket-popup");
+		});
+		/*search.addEventListener("mouseleave", function (evt) {
+			evt.preventDefault();
+			searchpopup.classList.remove("search-popup");
+			searchpopuptext.focus();
+		});*/
+		basketbutton.addEventListener("focus", function (evt) {
+			evt.preventDefault();
+			basketpopup.classList.add("basket-popup");
+		});
+		basketbutton.addEventListener("onblur", function (evt) {
+			evt.preventDefault();
+			basketpopup.classList.remove("basket-popup");
+		});
+		/*window.addEventListener("keydown", function (evt) {
+			if (evt.keyCode===9) {
+			if (basketpopup.classList.contains("basket-popup")) {
+				basketpopuptext.blur();
+				basketpopup.classList.remove("basket-popup");
+				}
+			}
+		});*/
+		window.addEventListener("keydown", function (evt) {
+			if (evt.keyCode===27) {
+			if (basketpopup.classList.contains("basket-popup")) {
+				basketpopup.classList.remove("basket-popup");
+				}
+			}
+		});
+			
 			
 		gallerybutton1.addEventListener("click", function(evt) {
 			evt.preventDefault();
@@ -344,25 +381,6 @@
 		});
 		
 	
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 			
 		form.addEventListener("click", function(evt) {
 			evt.preventDefault();
@@ -381,6 +399,9 @@
 				}
 			}
 		});
+		
+	
+		
 		
 		search.addEventListener("mouseenter", function (evt) {
 			evt.preventDefault();

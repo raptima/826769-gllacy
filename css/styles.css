@@ -411,7 +411,7 @@ a:focus {
 	
 .search-popup-none {
 	position:fixed;
-	top: 60px;
+	top: 65px;
 	left: 48%;
 	transform: translateX (-48%);
 	display:none;
@@ -454,7 +454,7 @@ a:focus {
 .login-link-popup-none {
 	display:none;
 	position:fixed;
-	top: 60px;
+	top: 65px;
 	left: 60%;
 	translateX:(-60%);
 	flex-direction: column;
@@ -510,11 +510,24 @@ a:focus {
     line-height: 16px;
     box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
     position: fixed;
-    top: 55px;
+    top: 65px;
     font-weight: 500;
-    left: 22%;
-    transform: translateX(-22%);
+    left: 20%;
+    transform: translateX(-20%);
 	border-radius: 6px;
+}
+
+.catalog-popup-none:hover a:hover,
+.catalog-popup-none:hover a:focus {
+	background-color: #fbded7;
+}
+
+.catalog-popup-none:hover a:active {
+	background-color: #f6b5a5;
+}
+
+.catalog-popup-none .current {
+	background-color: #d07058;
 }
 
 .catalog-popup {
@@ -586,7 +599,7 @@ a:focus {
     top: 0;
     right: 0;
     border: none;
-    background-color: snow;
+    background: none;
 }
 
 .link-popup-title {
@@ -599,9 +612,22 @@ a:focus {
 	display:flex;
 }
 
-.basket-popup {
+.basket-popup-none {
+	display: none;
 	background-color: #f8f7f4;
 	padding: 20px 15px 21px 15px;
+	width: 539px;
+	height: 100px;
+	justify-content: flex-end;
+    align-items: flex-end;
+	border-radius: 5px;
+	position: fixed;
+    right: 4%;
+    top: 65px;
+}
+
+.basket-popup {
+	display: flex;
 }
 
 
@@ -682,7 +708,8 @@ ul.breadcrumbs li {
 }
 
 .pagination-list {
-	margin-left:auto;
+	display: flex;
+    justify-content: flex-end;
 }
 
 .pagination-list li:not(:last-child) {
@@ -1194,7 +1221,7 @@ ul.breadcrumbs li {
 
 .jam p {
 	display:flex;
-	margin-top: 28px;
+	margin-top: 21px;
 }
 
 .jam .button-orange {
@@ -1215,7 +1242,7 @@ ul.breadcrumbs li {
 
 .choko p {
 	display:flex;
-	margin-top: 28px;
+	margin-top: 21px;
 }
 
 .choko .button-orange {
