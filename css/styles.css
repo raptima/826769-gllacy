@@ -6,7 +6,6 @@ body {
 	line-height: 22px;
 	font-weight: 600;
 	color: #ffffff;
-	/*background: linear-gradient(to top, #000000, #AAAAAA);*/
 	background: linear-gradient(to top, #859d8f, #9cb0a5);
 }
 
@@ -116,7 +115,8 @@ a:focus {
 	color:#323232;
 }
 
-/*Текстовые данные, фоны*/
+
+
 .site-navigation  {
 	font-size: 16px;
 	line-height: 18px;
@@ -335,7 +335,6 @@ a:focus {
     font-size: 16px;
     line-height: 24px;
     border-radius: 20px;
-    /* margin-top: -1px; */
     padding: 0px 17px 26px 21px;
 }
 
@@ -398,8 +397,6 @@ a:focus {
 	margin: -1px;
 }
 
-/*Текстовые данные, фоны*/	
-	/*Всплывающие элементы*/
 	
 .search-popup-none {
 	position:fixed;
@@ -624,9 +621,6 @@ a:focus {
 
 
 
-/*Текстовые данные, фоны*/	
-	/*Всплывающие элементы*/
-		/*Интерактивность*/
 .search-popup input:hover {
 	border: solid 1px rgb(154,154,154);
 }
@@ -635,8 +629,6 @@ a:focus {
 	border: solid 1px rgb(46,136,228);
 }
 		
-/*Текстовые данные, фоны*/
-	/*INNER.HTML*/
 .site-navigation-current  {
 	font-size: 16px;
 	line-height: 18px;
@@ -860,7 +852,6 @@ ul.breadcrumbs li {
 }
 
 
-/*Интерактивность*/	
 .site-navigation a:hover,
 .site-navigation a:focus {
 	color:#000000;
@@ -881,7 +872,6 @@ ul.breadcrumbs li {
 
 .hits-item:hover,
 .hits-item:focus {
-	/*background-color: #9bafa3;*/
 	background: rgba(255,255,255,0.1);
 	border-radius:5px;	
 	box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
@@ -904,8 +894,6 @@ ul.breadcrumbs li {
 	color: #dc532f;
 }
 
-/*Интерактивность*/
-	/*Оранжевая кнопка*/
 .button-orange {
 	box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
 	border:none;
@@ -973,8 +961,6 @@ ul.breadcrumbs li {
 
 
 
-/*Интерактивность*/
-	/*Пользовательская навигация*/
 .user-nav-button,
 .user-nav-button-basket {
 	display: inline-flex;
@@ -1029,8 +1015,6 @@ ul.breadcrumbs li {
 	fill: #343434;
 }
 
-/*Интерактивность*/
-	/*Пользовательская навигация-корзина*/
 .user-nav-button-basket .basket-border,
 .user-nav-button-basket .basket-round {
 	fill: #ffffff;
@@ -1056,9 +1040,6 @@ ul.breadcrumbs li {
 }
 
 
-
-/*Интерактивность*/
-	/*/*Кнопки галереи*/
 .gallery-button-1,
 .gallery-button-2,
 .gallery-button-3 {
@@ -1094,8 +1075,6 @@ ul.breadcrumbs li {
 }
 
 
-/*Интерактивность*/
-	/*Кнопки социальных сетей*/
 .social-button-twitter .twitter-img,
 .social-button-instagram .instagram-img,
 .social-button-facebook .facebook-img,
@@ -1127,8 +1106,6 @@ ul.breadcrumbs li {
 	border-radius: 25px;
 }	
 
-/*Интерактивность*/
-	/*INNER.HTML*/
 	
 .data {
 	background-color: #aabcb2;
@@ -1203,7 +1180,6 @@ ul.breadcrumbs li {
 	color: #323232;
 }
  
-/*СЕТКИ*/
 .container {
 	width: 100%;
 	max-width: 1146px;
@@ -1242,7 +1218,7 @@ ul.breadcrumbs li {
 
 .site-navigation {
   display: flex;
-  list-style-type: none;
+  list-style-type: none;
   padding: 0;
 }
 
