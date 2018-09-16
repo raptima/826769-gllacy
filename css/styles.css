@@ -1494,14 +1494,32 @@ ul .footer-long {
 }
 
 .catalog {
-	display:flex;
-	flex-direction:column;
 }
 
 .catalog ul {
-	flex-wrap:wrap;
 	display:flex;
 	flex-direction:row;
 }
+.catalog-list-1,
+.catalog-list-2,
+.catalog-list-3 {
+	position: relative;
+}
 
+.catalog-list-2,
+.catalog-list-3 {
+	margin-top: -70px;
+}
+
+.catalog-list-1 {
+	z-index: 3;
+}
+
+.catalog-list-2 {
+	z-index: 2;
+}
+
+.catalog-list-3 {
+	z-index: 1;
+}
 
