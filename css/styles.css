@@ -329,8 +329,9 @@ a:focus {
 	margin-top:35px;
 }
 .sub-low input {
-	width: 368px;
-	height: 44px;
+	width: 353px;
+    height: 44px;
+    padding-left: 15px;
 }
 
 .sub-low button {
