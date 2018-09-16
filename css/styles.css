@@ -1259,6 +1259,8 @@ ul.breadcrumbs li {
 .hits ul {
 	display:flex;
 	flex-direction:row;
+    margin-top: 35px;
+    margin-bottom: 25px;
 }
 
 .about  {
