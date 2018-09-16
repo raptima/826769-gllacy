@@ -58,45 +58,46 @@
 					<div class="filters-top">
 						<div class="filterfield">
 							<p>Сортировка:</p>
-							<span class="data">
-							<select name = "sort" <svg class="triangle" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path d="M5.5 10L0 0h11"/></svg>>
-									<option value="popularuty">По популяности</option>
-									<option value="lowcost">Сначала недорогие</option>
-									<option value="highcost">Сначала недорогие</option>
-									<option value="fatness">По жирности</option>
-							<select>
+							<span class="data sort">
+								<select name = "sort"> 
+										<option value="popularuty">по популяности</option>
+										<option value="lowcost">сначала недорогие</option>
+										<option value="highcost">сначала недорогие</option>
+										<option value="fatness">по жирности</option>
+								<select>
 							</span>
 						</div>
 					
-						<div class="filterfield">
+						<div class="filterfield ">
 							<p>Цена: </p>
-							<span class="data">
+							<span class="data price">
 								<input type="range">
 							</span>
 						</div>
 						<div class="filterfield">
 							<p>Жирность: </p>
-							<span class="data">
-								<input type="radio" name="fat" value="0">0</input>
-								<input type="radio" name="fat" checked>до 10</input>
-								<input type="radio" name="fat">до 30</input>
-								<input type="radio" name="fat">выше 30</input>
+							<span class="data fat">
+								<input type="radio" name="fat" value="0">0%</input>
+								<input type="radio" name="fat" checked>до 10%</input>
+								<input type="radio" name="fat">до 30%</input>
+								<input type="radio" name="fat">выше 30%</input>
 							</span>
 						</div>
 					</div>
 					<div class="filters-bottom">
-						<div class="filterfield">
+						<div class="filterfield ">
 							<p>Наполнители: </p>
-							<span class="data">
+							<span class="data filler">
 								<input type="checkbox" name="filler1" value="filler1" checked>Шоколадные</input>
 								<input type="checkbox" name="filler1" value="filler1" checked>Сахарные присыпки</input>
 								<input type="checkbox" name="filler1" value="filler1">Фрукты</input>
 								<input type="checkbox" name="filler1" value="filler1">Сиропы</input>
 								<input type="checkbox" name="filler1" value="filler1">Джемы</input>
 							</span>
-						</div>	
+						</div>
+						<button class="confirmation" type="submit">Применить</button>
 					</div>
-					<button class="confirmation" type="submit">Применить</button>
+					
 				</form>
 			</section>
 		</div>

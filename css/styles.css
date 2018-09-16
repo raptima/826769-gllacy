@@ -33,7 +33,6 @@ a {
 	color: #ffffff;
 }
 
-
 a:hover,
 a:focus {
 	color: #dc532f;
@@ -698,9 +697,10 @@ ul.breadcrumbs li {
 	-ms-appearance: none;
 	background:none;
 	border:none;
-	background-image: url("../img/icon-down-dir.svg");
+	background-image: url("../img/icon-down-dir-white.svg");
 	background-position: right center;
 	background-repeat: no-repeat;
+	background-position-x: 165px;
 }
 
 .catalog-list p {
@@ -723,6 +723,14 @@ ul.breadcrumbs li {
 	color:#000000;
 	text-decoration:none;
 	background-color:#FFFFFF;
+}
+
+.site-navigation a:active,
+.site-navigation a:active {
+	color:#000000;
+	text-decoration:none;
+	background-color:#FFFFFF;
+	box-shadow: inset 0px 2px 1px 0px rgba(105, 105, 105, 0.004);
 }
 
 .footer-social-list a:hover {
@@ -980,16 +988,62 @@ ul.breadcrumbs li {
 	/*INNER.HTML*/
 	
 .data {
-	background-color:#aabcb2;
-	padding:10px;
-	border-radius: 25px;
+	background-color: #aabcb2;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    height: 36px;
+	margin-right: 15px;
+	justify-content: space-around;
+}
+
+.sort {
+	width: 193px;
+}
+
+
+.sort:hover select {
+	    background-image: url(../img/icon-down-dir.svg);
+}
+
+.sort:hover select {
+	color: #323232;
+	background-color: #ffffff;
+	border-radius:15px;
+}
+
+.sort:hover option {
+	color: #323232;
+	background-color: #ffffff;
+}
+
+.sort select {
+	padding-left: 15px;
+}
+
+.price {
+	width: 180px;
+	padding: 0 20px;
+}
+
+.fat {
+	width: 385px;
+	padding: 0 15px;
+}
+
+.filler {
+	width: 667px;
+	padding: 0 20px 0 16px;
 }
 
 .confirmation {
 	border:none;
 	background-color:#aabcb2;
-	padding:10px;
 	border-radius: 25px;
+	display: flex;
+    align-self: flex-end;
+	padding: 10px 30px;
+	width: 143px;
 }
  
 /*СЕТКИ*/
