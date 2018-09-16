@@ -226,14 +226,6 @@ a:focus {
 	padding-top: 5px;
 }
 
-./*hits-item:not(:first-child){
-	padding-left: 13px;
-}
-
-.hits-item:not(:last-child){
-	padding-right: 13px;
-}
-*/
 
 .hits-item {
 	padding: 0 13px;
